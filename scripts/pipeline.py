@@ -1,7 +1,7 @@
-from scripts.load_data import load_h5_data, load_adjacency_matrix
-from scripts.build_complex import define_0_cells, define_1_cells, define_2_cells
-from scripts.compute_matrices import compute_b1, compute_b2, compute_laplacians
-from scripts.utils import save_matrix
+from load_data import load_h5_data, load_adjacency_matrix
+from build_complex import define_0_cells, define_1_cells, define_2_cells
+from compute_matrices import compute_b1, compute_b2, compute_laplacians
+from utils import save_matrix
 
 # Load raw data
 data = load_h5_data('./data/METR-LA/metr-la.h5')
