@@ -79,12 +79,13 @@ def save_all_matrices(output_folder, **matrices):
 
 if __name__ == '__main__':
     datasets = {
-        "metr-la": "documents/traffictdl/data/metr-la/",
-        "pems-bay": "documents/traffictdl/data/pems-bay/pems-bay_cleaned.csv"
+        "metr-la": "../data/metr-la/metr-la_cleaned.csv",
+        "pems-bay": "../data/pems-bay/pems-bay_cleaned.csv"
     }
 
     for name, path in datasets.items():
         print(f"Checking path: {path}")
+        print(f"Resolved absolute path: {os.path.abspath(path)}")
         if not os.path.exists(path):
             print(f"Skipping {name}: file not found at {path}")
             continue
