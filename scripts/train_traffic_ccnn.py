@@ -31,9 +31,19 @@ class TrafficPredictionDataset(Dataset):
     def __getitem__(self, idx):
         x, y = self.samples[idx]
         return torch.tensor(x, dtype=torch.float32), torch.tensor(y, dtype=torch.float32)
+    
+    
 
 # --- MODEL ---
 class TrafficCCNN(nn.Module):
+
+    def scipy_to_torch_sparse(mat):
+        mat = mat.tocoo()
+        indices = torch.from_numpy(np.vstack((mat.row, mat.col)).astype(np.int64))
+        values = torch.from_numpy(mat.data)
+        shape = mat.shape
+        return torch.sparse_coo_tensor(indices, values, torch.Size(shape)).float()
+
     def __init__(self, complex, num_sensors, input_window, pred_window=12, hidden_dim=64):
         super().__init__()
         self.num_sensors = num_sensors
@@ -43,11 +53,13 @@ class TrafficCCNN(nn.Module):
 
         # HMC layer for topology-aware message passing
         # We'll use a simple structure: 1 layer, from 0-cells to 2-cells
-        self.hmc = HMC(
-            in_channels=[1, 1, 1],
-            hidden_channels=[hidden_dim, hidden_dim, hidden_dim],
-            out_channels=[hidden_dim, hidden_dim, hidden_dim]
-        )
+        self.hmc = HMC([
+            [
+                [hidden_dim, hidden_dim, hidden_dim],  # 0-cells: in, hidden, out
+                [hidden_dim, hidden_dim, hidden_dim],  # 1-cells: in, hidden, out
+                [hidden_dim, hidden_dim, hidden_dim],  # 2-cells: in, hidden, out
+            ]
+        ])
 
         # Temporal encoder (LSTM over input window for each node)
         self.temporal_encoder = nn.LSTM(
@@ -62,15 +74,14 @@ class TrafficCCNN(nn.Module):
         )
 
         # Save topology matrices as buffers (convert to dense for simplicity)
-        a0 = torch.from_numpy(complex.complex.adjacency_matrix(0, 1).todense()).float()
-        a1 = torch.from_numpy(complex.complex.adjacency_matrix(1, 2).todense()).float()
-        coa2 = torch.from_numpy(
-            (complex.complex.incidence_matrix(0, 2).T @ complex.complex.incidence_matrix(0, 2)).todense()
-        ).float()
-        coa2.fill_diagonal_(0)
-        b1 = torch.from_numpy(complex.complex.incidence_matrix(0, 1).todense()).float()
-        b2 = torch.from_numpy(complex.complex.incidence_matrix(1, 2).todense()).float()
-
+        a0 = torch.from_numpy(complex.complex.adjacency_matrix(0, 1).todense()).to_sparse().float()
+        a1 = torch.from_numpy(complex.complex.adjacency_matrix(1, 2).todense()).to_sparse().float()
+        coa2_np = (complex.complex.incidence_matrix(0, 2).T @ complex.complex.incidence_matrix(0, 2))
+        coa2_np.setdiag(0)
+        coa2 = torch.from_numpy(coa2_np.todense()).to_sparse().float()
+        b1 = torch.from_numpy(complex.complex.incidence_matrix(0, 1).todense()).to_sparse().float()
+        b2 = torch.from_numpy(complex.complex.incidence_matrix(1, 2).todense()).to_sparse().float()
+        
         self.register_buffer("a0", a0)
         self.register_buffer("a1", a1)
         self.register_buffer("coa2", coa2)
