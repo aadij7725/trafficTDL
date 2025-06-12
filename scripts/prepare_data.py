@@ -3,13 +3,14 @@ import numpy as np
 import json
 from itertools import combinations
 import h5py
+
 def print_h5_structure(file_name):
     with h5py.File(file_name, 'r') as f:
         def printname(name):
             print(name)
         f.visit(printname)
 
-print_h5_structure("../data/PEMS-BAY/pems-bay.h5")
+print_h5_structure("../data/METR-LA/metr-la.h5")
 
 def compute_sensor_stats(df):
     """Compute stats over time for each sensor."""
@@ -58,12 +59,18 @@ def export_json(obj, filename):
         json.dump(obj, f, indent=2)
 
 if __name__ == "__main__":
-    h5_file = "../data/PEMS-BAY/pems-bay.h5"  # 
-    df = pd.read_hdf(h5_file, key="speed")
+    h5_file = "../data/METR-LA/metr-la.h5"  #
+    df = pd.read_hdf(h5_file, key="df")
 
-    
-    # 0-cells: nodes
+    # --- DATA EXTRACTION FOR CCNN TRAINING ---
+    # Export the sensor readings as a numpy array aligned to sensor order
     sensors = list(df.columns)
+    readings = df[sensors].values.T  # shape: [num_sensors, num_timesteps]
+    np.save("sensor_readings_aligned.npy", readings)
+    print(f"Saved sensor readings aligned as shape {readings.shape} to sensor_readings_aligned.npy")
+    # -----------------------------------------
+
+    # 0-cells: nodes
     sensor_stats = compute_sensor_stats(df)
     nodes = [{"id": sid, **sensor_stats[sid]} for sid in sensors]
     export_json(nodes, "nodes.json")

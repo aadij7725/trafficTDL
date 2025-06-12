@@ -30,8 +30,8 @@ class TrafficComplex:
         print("Building Traffic Combinatorial Complex...")
         # 0-cells: sensors
         print(f"Adding {len(self.sensors)} sensors as rank 0 cells")
-        for sensor_id in self.sensors:
-            self.complex.add_cell([sensor_id], rank=0)
+        for id in self.sensors:
+            self.complex.add_cell(id["id"], rank=0)
         
         # 1-cells: roads
         print(f"Adding {len(self.roads)} roads as rank 1 cells")
@@ -55,9 +55,9 @@ class TrafficComplex:
 
 # Example usage
 def main():
-    sensors_path = "/outputs/meter-la/nodes.json"     # Path to your 0-cells JSON
-    roads_path = "./outputs/meter-la/edges.json"        # Path to your 1-cells JSON
-    triangles_path = "/outputs/meter-la/triangles.json" # Path to your 2-cells JSON
+    sensors_path = "./outputs/metr-la/nodes.json"     # Path to your 0-cells JSON
+    roads_path = "./outputs/metr-la/edges.json"        # Path to your 1-cells JSON
+    triangles_path = "./outputs/metr-la/triangles.json" # Path to your 2-cells JSON
 
     traffic_complex = TrafficComplex(sensors_path, roads_path, triangles_path)
     print("\nCombinatorial complex summary:")
