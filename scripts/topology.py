@@ -1,88 +1,67 @@
-import numpy as np
-from sklearn.cluster import DBSCAN
+"""
+Traffic Topology - Combinatorial Complex representation for traffic sensor network
+with 0-cells as sensors, 1-cells as roads (edges), and 2-cells as triangles (groups of 3 connected sensors)
+"""
+
+import json
 import toponetx as tnx
 
 class TrafficComplex:
-    def __init__(self, sensors, roads, epsilon=0.01):
+    def __init__(self, sensors_path, roads_path, triangles_path):
         """
-        sensors: dict mapping sensor_id to (x, y) coordinates
-        roads: list of (sensor_id_1, sensor_id_2) tuples
-        epsilon: float, DBSCAN epsilon for 2-cell grouping
+        Initializes the combinatorial complex for the traffic sensor network.
+        Args:
+          sensors_path: path to JSON file containing list of sensor IDs (0-cells)
+          roads_path: path to JSON file containing list of 2-element lists (sensor ids) for each road (1-cells)
+          triangles_path: path to JSON file containing list of 3-element lists (sensor ids) for each triangle (2-cells)
         """
-        self.sensors = sensors
-        self.roads = roads
-        self.epsilon = epsilon
+        self.sensors = self._load_json(sensors_path)
+        self.roads = self._load_json(roads_path)
+        self.triangles = self._load_json(triangles_path)
+        
         self.complex = tnx.CombinatorialComplex()
         self._build_complex()
-
+    
+    def _load_json(self, path):
+        with open(path, 'r') as f:
+            return json.load(f)
+    
     def _build_complex(self):
+        print("Building Traffic Combinatorial Complex...")
         # 0-cells: sensors
+        print(f"Adding {len(self.sensors)} sensors as rank 0 cells")
         for sensor_id in self.sensors:
             self.complex.add_cell([sensor_id], rank=0)
-
+        
         # 1-cells: roads
+        print(f"Adding {len(self.roads)} roads as rank 1 cells")
         for road in self.roads:
-            s1, s2 = road
-            self.complex.add_cell([s1, s2], rank=1, name=f"{s1}_{s2}")
-
-        # 2-cells: groups of 3 connected roads found via DBSCAN
-        # 1. Create edge midpoints for clustering
-        edge_midpoints = []
-        edge_to_sensors = []
-        for s1, s2 in self.roads:
-            x1, y1 = self.sensors[s1]
-            x2, y2 = self.sensors[s2]
-            midpoint = ((x1 + x2) / 2, (y1 + y2) / 2)
-            edge_midpoints.append(midpoint)
-            edge_to_sensors.append((s1, s2))
-
-        # 2. Cluster midpoints
-        if len(edge_midpoints) >= 3:
-            X = np.array(edge_midpoints)
-            clustering = DBSCAN(eps=self.epsilon, min_samples=3).fit(X)
-            labels = clustering.labels_
-
-            # 3. For each cluster, find triplets of connected sensors
-            from collections import defaultdict
-            cluster_edges = defaultdict(list)
-            for idx, label in enumerate(labels):
-                if label != -1:
-                    cluster_edges[label].append(edge_to_sensors[idx])
-
-            for cluster, edges in cluster_edges.items():
-                # Get unique sensors in the cluster
-                sensors_in_cluster = set()
-                for e in edges:
-                    sensors_in_cluster.update(e)
-                # Find all triangles (triplets fully connected)
-                from itertools import combinations
-                for triplet in combinations(sensors_in_cluster, 3):
-                    # Check if all three edges exist
-                    triplet_edges = [
-                        (triplet[0], triplet[1]),
-                        (triplet[1], triplet[2]),
-                        (triplet[0], triplet[2])
-                    ]
-                    if all((e in edges or (e[1], e[0]) in edges) for e in triplet_edges):
-                        self.complex.add_cell(list(triplet), rank=2, name=f"triangle_{triplet}")
-
+            sensor_a, sensor_b = road
+            name = f"{sensor_a}_{sensor_b}"
+            self.complex.add_cell([sensor_a, sensor_b], rank=1, name=name)
+        
+        # 2-cells: triangles
+        print(f"Adding {len(self.triangles)} triangles as rank 2 cells")
+        for triangle in self.triangles:
+            sensor_a, sensor_b, sensor_c = triangle
+            tri_name = f"{sensor_a}_{sensor_b}_{sensor_c}"
+            self.complex.add_cell([sensor_a, sensor_b, sensor_c], rank=2, name=tri_name)
+        
+        print("Traffic combinatorial complex built.")
+    
     def get_complex(self):
+        """Return the constructed combinatorial complex."""
         return self.complex
 
-# Example usage:
+# Example usage
+def main():
+    sensors_path = "/outputs/meter-la/nodes.json"     # Path to your 0-cells JSON
+    roads_path = "./outputs/meter-la/edges.json"        # Path to your 1-cells JSON
+    triangles_path = "/outputs/meter-la/triangles.json" # Path to your 2-cells JSON
+
+    traffic_complex = TrafficComplex(sensors_path, roads_path, triangles_path)
+    print("\nCombinatorial complex summary:")
+    print(traffic_complex.get_complex())
+
 if __name__ == "__main__":
-    # Example data (replace with actual sensor/road info)
-    sensors = {
-        'A': (0.0, 0.0),
-        'B': (1.0, 0.0),
-        'C': (0.5, 0.866),
-        'D': (2.0, 0.0),
-    }
-    roads = [
-        ('A', 'B'),
-        ('B', 'C'),
-        ('A', 'C'),
-        ('B', 'D')
-    ]
-    complex_builder = TrafficComplex(sensors, roads, epsilon=1.0)
-    print(complex_builder.get_complex())
+    main()
