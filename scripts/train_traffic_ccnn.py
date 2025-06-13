@@ -81,7 +81,7 @@ class TrafficCCNN(nn.Module):
         coa2 = torch.from_numpy(coa2_np.todense()).to_sparse().float()
         b1 = torch.from_numpy(complex.complex.incidence_matrix(0, 1).todense()).to_sparse().float()
         b2 = torch.from_numpy(complex.complex.incidence_matrix(1, 2).todense()).to_sparse().float()
-        
+
         self.register_buffer("a0", a0)
         self.register_buffer("a1", a1)
         self.register_buffer("coa2", coa2)
@@ -123,6 +123,40 @@ class TrafficCCNN(nn.Module):
             outputs.append(preds)
         outputs = torch.stack(outputs, dim=0)  # [batch, pred_window, num_sensors]
         return outputs
+    # --- Metrics computation and evaluation ---
+
+def compute_metrics(y_true, y_pred):
+    """
+    y_true: numpy array or torch tensor of true values
+    y_pred: numpy array or torch tensor of predicted values
+    Returns: tuple (rmse, mae, mape)
+    """
+    # Convert to numpy if torch tensor
+    if hasattr(y_true, "detach"): y_true = y_true.detach().cpu().numpy()
+    if hasattr(y_pred, "detach"): y_pred = y_pred.detach().cpu().numpy()
+    y_true = y_true.reshape(-1)
+    y_pred = y_pred.reshape(-1)
+    rmse = np.sqrt(np.mean((y_true - y_pred)**2))
+    mae = np.mean(np.abs(y_true - y_pred))
+    mape = np.mean(np.abs((y_true - y_pred)/(y_true + 1e-8))) * 100
+    return rmse, mae, mape
+
+# --- Evaluation after training ---
+
+def evaluate_model(model, dataloader, device):
+    model.eval()
+    all_preds = []
+    all_targets = []
+    with torch.no_grad():
+        for x, y in dataloader:
+            x = x.to(device)
+            y = y.to(device)
+            pred = model(x)
+            all_preds.append(pred.cpu().numpy())
+            all_targets.append(y.cpu().numpy())
+    y_pred = np.concatenate(all_preds, axis=0)
+    y_true = np.concatenate(all_targets, axis=0)
+    return compute_metrics(y_true, y_pred)
 
 # --- TRAINING SCRIPT ---
 def main():
@@ -156,7 +190,7 @@ def main():
     loss_fn = nn.MSELoss()
 
     # --- Training Loop ---
-    epochs = 50
+    epochs = 100
     for epoch in range(epochs):
         model.train()
         losses = []
@@ -174,6 +208,14 @@ def main():
     # --- Save Model ---
     torch.save(model.state_dict(), "traffic_ccnn.pt")
     print("Model saved as traffic_ccnn.pt")
+
+    # --- Evaluate and print metrics ---
+    print("Evaluating model on full dataset for metrics...")
+    eval_loader = DataLoader(dataset, batch_size=32, shuffle=False)
+    rmse, mae, mape = evaluate_model(model, eval_loader, device)
+    print(f"RMSE: {rmse:.4f}")
+    print(f"MAE: {mae:.4f}")
+    print(f"MAPE: {mape:.2f}%")
 
 if __name__ == "__main__":
     main()
