@@ -7,7 +7,7 @@ import json
 import toponetx as tnx
 
 class TrafficComplex:
-    def __init__(self, sensors_path, roads_path, triangles_path):
+    def __init__(self, sensors_path, roads_path, faces_path):
         """
         Initializes the combinatorial complex for the traffic sensor network.
         Args:
@@ -17,7 +17,7 @@ class TrafficComplex:
         """
         self.sensors = self._load_json(sensors_path)
         self.roads = self._load_json(roads_path)
-        self.triangles = self._load_json(triangles_path)
+        self.faces = self._load_json(faces_path)
         
         self.complex = tnx.CombinatorialComplex()
         self._build_complex()
@@ -36,16 +36,16 @@ class TrafficComplex:
         # 1-cells: roads
         print(f"Adding {len(self.roads)} roads as rank 1 cells")
         for road in self.roads:
-            sensor_a, sensor_b = road
+            sensor_a, sensor_b = road["nodes"]
             name = f"{sensor_a}_{sensor_b}"
             self.complex.add_cell([sensor_a, sensor_b], rank=1, name=name)
         
         # 2-cells: triangles
-        print(f"Adding {len(self.triangles)} triangles as rank 2 cells")
-        for triangle in self.triangles:
-            sensor_a, sensor_b, sensor_c = triangle
-            tri_name = f"{sensor_a}_{sensor_b}_{sensor_c}"
-            self.complex.add_cell([sensor_a, sensor_b, sensor_c], rank=2, name=tri_name)
+        print(f"Adding {len(self.faces)} faces as rank 2 cells")
+        for triangle in self.faces:
+            sensor_a, sensor_b, sensor_c, sensor_d = triangle["nodes"]
+            face_name = f"{sensor_a}_{sensor_b}_{sensor_c}{sensor_d}"
+            self.complex.add_cell([sensor_a, sensor_b, sensor_c, sensor_d], rank=2, name=face_name)
         
         print("Traffic combinatorial complex built.")
     
@@ -57,9 +57,9 @@ class TrafficComplex:
 def main():
     sensors_path = "./outputs/metr-la/nodes.json"     # Path to your 0-cells JSON
     roads_path = "./outputs/metr-la/edges.json"        # Path to your 1-cells JSON
-    triangles_path = "./outputs/metr-la/triangles.json" # Path to your 2-cells JSON
+    faces_path = "./outputs/metr-la/faces.json" # Path to your 2-cells JSON
 
-    traffic_complex = TrafficComplex(sensors_path, roads_path, triangles_path)
+    traffic_complex = TrafficComplex(sensors_path, roads_path, faces_path)
     print("\nCombinatorial complex summary:")
     print(traffic_complex.get_complex())
 
