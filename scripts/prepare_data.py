@@ -3,7 +3,6 @@ import numpy as np
 import json
 import pickle
 from collections import defaultdict
-import h5py
 
 def compute_sensor_stats(df):
     stats = {}
@@ -54,14 +53,11 @@ def export_json(obj, filename):
 def load_node_locations(pkl_path):
     with open(pkl_path, "rb") as f:
         data = pickle.load(f)
-    # data: {node_id: (road_name, position)}
-    # Normalize node ids to string for consistency
     return {str(k): (v[0], float(v[1])) for k, v in data.items()}
 
 def get_road_to_nodes(node_locations, merge_santa_ana_golden_state=True):
     road_to_nodes = defaultdict(list)
     for node_id, (road, pos) in node_locations.items():
-        # Merge Santa Ana and Golden State
         if merge_santa_ana_golden_state and (road.lower() in ["santa ana freeway", "golden state freeway"]):
             road = "Santa Ana/Golden State"
         road_to_nodes[road].append((node_id, pos))
@@ -94,25 +90,39 @@ def main():
     df = pd.read_hdf(h5_file, key="df")
     sensors = [str(s) for s in df.columns]
 
+    # Last 12 steps for validation
+    val_steps = 12
+    train_df = df.iloc[:-val_steps]
+    val_df = df.iloc[-val_steps:]
+
+    # Compute per-sensor norm params on train only
+    means = train_df.mean(axis=0)
+    stds = train_df.std(axis=0) + 1e-6
+    train_df_norm = (train_df - means) / stds
+    val_df_norm = (val_df - means) / stds
+    train_df_norm_reset = train_df_norm.reset_index(drop=True)
+    val_df_norm_reset = val_df_norm.reset_index(drop=True)
+    df_norm = pd.concat([train_df_norm_reset, val_df_norm_reset], axis=0, ignore_index=True)
+
+    # Save norm params for later denorm
+    np.savez("normalization_params.npz", means=means.values, stds=stds.values, columns=sensors)
+
     # Load node locations mapping
     node_locations = load_node_locations(node_locations_pkl)
-
-    # Sanity check: all sensors should be in node_locations
     missing = [s for s in sensors if s not in node_locations]
     assert not missing, f"Missing sensors in node_locations.pkl: {missing}"
 
-    # --- 0-cells: nodes ---
-    sensor_stats = compute_sensor_stats(df)
+    # Node features from normalized train
+    sensor_stats = compute_sensor_stats(train_df_norm)
     nodes = [{"id": sid, **sensor_stats[sid]} for sid in sensors]
     export_json(nodes, "nodes.json")
 
-    # --- 1-cells: edges (road chains, merging Santa Ana and Golden State) ---
+    # Edges from normalized train
     road_to_nodes = get_road_to_nodes(node_locations, merge_santa_ana_golden_state=True)
-    edges = make_edges(road_to_nodes, df)
+    edges = make_edges(road_to_nodes, train_df_norm)
     export_json(edges, "edges.json")
 
-    # --- 2-cells: faces (intersections, hardcoded sensors) ---
-    # Format: (roads, [sensor ids])
+    # Faces from normalized train (update your face_specs as needed)
     face_specs = [
         (["San Diego Freeway", "Ventura Freeway"],                [765099, 764781, 764794, 765171]),
         (["Ventura Freeway", "Hollywood Freeway"],                [764858, 718141, 768066, 773939]),
@@ -124,11 +134,10 @@ def main():
         (["Glendale Freeway", "Arroyo Seco Parkway"],             [716943, 716941, 716942, 716939]),
         (["Foothill Freeway", "Glendale Freeway"],                [769847, 767610, 767609, 769941])
     ]
-
     faces = []
     for roads, node_ids in face_specs:
         node_ids_str = [str(n) for n in node_ids]
-        face_stats = compute_face_stats(df, node_ids_str)
+        face_stats = compute_face_stats(train_df_norm, node_ids_str)
         faces.append({
             "nodes": node_ids_str,
             "roads": roads,
@@ -136,6 +145,9 @@ def main():
         })
     export_json(faces, "faces.json")
 
+    # Save normalized readings for all data (train+val)
+    readings_norm = df_norm[sensors].values.T  # [num_sensors, num_timesteps]
+    np.save("sensor_readings_normalized.npy", readings_norm)
     print(f"Exported {len(nodes)} nodes, {len(edges)} edges, {len(faces)} faces/intersections.")
 
 if __name__ == "__main__":

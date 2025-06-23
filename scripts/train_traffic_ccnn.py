@@ -10,25 +10,26 @@ import time
 
 # --- DATASET ---
 class TrafficPredictionDataset(Dataset):
-    def __init__(self, readings, input_window, pred_window=12):
+    def __init__(self, readings, input_window, pred_window=12, start=0, end=None):
         self.readings = readings
         self.input_window = input_window
         self.pred_window = pred_window
         self.num_sensors, self.num_timesteps = readings.shape
-        self.starts = np.arange(self.num_timesteps - input_window - pred_window + 1)
+        self.starts = np.arange(start, (self.num_timesteps if end is None else end) - input_window - pred_window + 1)
 
     def __len__(self):
         return len(self.starts)
 
     def __getitem__(self, idx):
-        try:
-            start = self.starts[idx]
-            x = self.readings[:, start : start + self.input_window]
-            y = self.readings[:, start + self.input_window : start + self.input_window + self.pred_window]
-            return torch.tensor(x.T, dtype=torch.float32), torch.tensor(y.T, dtype=torch.float32)
-        except Exception as e:
-            print(f"Data loading error at index {idx}: {e}")
-            raise e
+        start = self.starts[idx]
+        x = self.readings[:, start : start + self.input_window]
+        y = self.readings[:, start + self.input_window : start + self.input_window + self.pred_window]
+        return torch.tensor(x.T, dtype=torch.float32), torch.tensor(y.T, dtype=torch.float32)
+    @staticmethod
+    def last_window(readings, input_window, pred_window):
+        num_timesteps = readings.shape[1]
+        start = num_timesteps - input_window - pred_window
+        return TrafficPredictionDataset(readings, input_window, pred_window, start=start, end=start+1)
 
 def compute_metrics(y_true, y_pred):
     if hasattr(y_true, "detach"): y_true = y_true.detach().cpu().numpy()
@@ -40,7 +41,7 @@ def compute_metrics(y_true, y_pred):
     mape = np.mean(np.abs((y_true - y_pred) / (y_true + 1e-8))) * 100
     return rmse, mae, mape
 
-def evaluate_model(model, dataloader, device, node_features, edge_features, face_features, edge_map, face_map):
+def evaluate_model(model, dataloader, device, node_features, edge_features, face_features, edge_map, face_map, means, stds):
     model.eval()
     all_preds = []
     all_targets = []
@@ -56,10 +57,13 @@ def evaluate_model(model, dataloader, device, node_features, edge_features, face
                 edge_map,
                 face_map,
             )
-            all_preds.append(pred.cpu())
-            all_targets.append(y.cpu())
-    y_pred = torch.cat(all_preds, dim=0)
-    y_true = torch.cat(all_targets, dim=0)
+            # Denormalize
+            pred = pred.cpu().numpy() * stds[None, None, :] + means[None, None, :]
+            y = y.cpu().numpy() * stds[None, None, :] + means[None, None, :]
+            all_preds.append(pred)
+            all_targets.append(y)
+    y_pred = np.concatenate(all_preds, axis=0)
+    y_true = np.concatenate(all_targets, axis=0)
     return compute_metrics(y_true, y_pred)
 
 class TrafficCCNN(nn.Module):
@@ -176,16 +180,33 @@ def main():
     sensors_json = "./outputs/metr-la/nodes.json"
     edges_json = "./outputs/metr-la/edges.json"
     faces_json = "./outputs/metr-la/faces.json"
-    readings_npy = "./outputs/metr-la/sensor_readings_aligned.npy"
+    readings_npy = "./outputs/metr-la/sensor_readings_normalized.npy"
+    norm_params = np.load("./outputs/metr-la/normalization_params.npz")
+    means = norm_params["means"]
+    stds = norm_params["stds"]
+    columns = norm_params["columns"]  # for safety
 
     traffic_complex = TrafficComplex(sensors_json, edges_json, faces_json)
-
     readings = np.load(readings_npy)
     num_sensors, num_timesteps = readings.shape
     input_window = 24
     pred_window = 12
 
-    # Load node, edge, and face metadata
+    # Validation: only last 12 steps
+    val_steps = 12
+    train_dataset = TrafficPredictionDataset(readings, input_window, pred_window, start=0, end=num_timesteps - val_steps + 1)
+    val_start = num_timesteps - input_window - pred_window
+    val_end = val_start + 1 + input_window + pred_window - 1
+    val_dataset = TrafficPredictionDataset(
+        readings, input_window, pred_window,
+        start=val_start, end=val_end
+    )
+    print("Validation dataset size:", len(val_dataset))  # Should print 1
+    # For small val set, batch size 1 is good
+    train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
+
+    # ... [load features and maps as before] ...
     with open(sensors_json, "r") as f:
         node_list = json.load(f)
     with open(edges_json, "r") as f:
@@ -193,16 +214,9 @@ def main():
     with open(faces_json, "r") as f:
         face_list = json.load(f)
 
-    # Ensure readings and node_list are in the same order (by node id)
-    node_ids_json = [item["id"] for item in node_list]
-    node_ids_readings = [str(i) for i in node_ids_json]
-    # readings.npy should be in the same order as node_list for each axis=0
-    # If you generated readings.npy by stacking columns in node_list order, this will be OK.
-
     node_feat_keys = ["mean", "std", "min", "max", "median", "nonzero_frac", "missing_frac"]
     node_features = np.stack([[item[k] for k in node_feat_keys] for item in node_list], axis=0)
     node_features = torch.tensor(node_features, dtype=torch.float32)
-
     edge_feat_keys = ["mean_diff", "var_diff", "frac_both_nonzero", "max_lag_corr"]
     edge_map = {}
     edge_features = []
@@ -212,7 +226,6 @@ def main():
         edge_features.append([item[k] for k in edge_feat_keys])
     edge_features = np.stack(edge_features, axis=0)
     edge_features = torch.tensor(edge_features, dtype=torch.float32)
-
     face_feat_keys = ["mean_joint", "var_joint", "frac_all_nonzero"]
     face_map = {}
     face_features = []
@@ -223,10 +236,6 @@ def main():
     face_features = np.stack(face_features, axis=0)
     face_features = torch.tensor(face_features, dtype=torch.float32)
 
-    dataset = TrafficPredictionDataset(readings, input_window, pred_window)
-    print("Creating dataloader...")
-    dataloader = DataLoader(dataset, batch_size=1, shuffle=True, pin_memory=False, num_workers=os.cpu_count() // 2)
-    print("Dataloader created.")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     node_features = node_features.to(device)
     edge_features = edge_features.to(device)
@@ -240,16 +249,24 @@ def main():
 
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     loss_fn = nn.MSELoss()
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, mode='min', factor=0.5, patience=2
+    )
+
+    best_val_rmse = float('inf')
+    early_stop_counter = 0
+    best_model_path = "traffic_ccnn_best.pt"
+
     print("Starting training...")
-    training_start_time = time.time()
-    epochs = 15
+    training_time = time.time()
+    epochs = 20
     for epoch in range(epochs):
         epoch_start_time = time.time()
         model.train()
-        losses = []
-        for x, y in dataloader:
-            x = x.to(device, non_blocking=True)
-            y = y.to(device, non_blocking=True)
+        train_losses = []
+        for x, y in train_loader:
+            x = x.to(device)
+            y = y.to(device)
             pred = model(
                 x,
                 node_features,
@@ -262,18 +279,43 @@ def main():
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-            losses.append(loss.item())
-        epoch_time = time.time() - epoch_start_time
-        print(f"Epoch completed in {epoch_time:.2f} seconds.")
-        print(f"Epoch {epoch + 1} | Loss: {np.mean(losses):.6f}")
-    training_time = time.time() - training_start_time
-    print(f"Training completed in {training_time:.2f} seconds.")
-    rmse, mae, mape = evaluate_model(
-        model, dataloader, device, node_features, edge_features, face_features, edge_map, face_map
+            train_losses.append(loss.item())
+        train_loss = np.mean(train_losses)
+
+        # Validation
+        val_rmse, val_mae, val_mape = evaluate_model(
+            model, val_loader, device, node_features, edge_features, face_features, edge_map, face_map, means, stds
+        )
+        final_epoch_time = time.time() - epoch_start_time
+        print(f"Epoch completed in {final_epoch_time:.2f} seconds.")
+        print(f"Epoch {epoch+1} | Train Loss: {train_loss:.6f} | Val RMSE: {val_rmse:.4f} | Val MAE: {val_mae:.4f} | VAl MAPE: {val_mape:.2f}%")
+
+        # LR scheduler step (on train loss)
+        o = optimizer.param_groups[0]['lr']
+        scheduler.step(train_loss)
+        if o != optimizer.param_groups[0]['lr']:
+            print(f"Learning rate adjusted to {optimizer.param_groups[0]['lr']:.6e}")
+        # Early stopping on val RMSE
+        if val_rmse < best_val_rmse:
+            best_val_rmse = val_rmse
+            early_stop_counter = 0
+            torch.save(model.state_dict(), best_model_path)
+            print("New best model saved.")
+        else:
+            early_stop_counter += 1
+            if early_stop_counter >= 3:
+                print(f"Early stopping at epoch {epoch+1}. Reloading best model.")
+                model.load_state_dict(torch.load(best_model_path))
+                break
+    final_training_time = time.time() - training_time
+    print(f"Training completed in {final_training_time:.2f} seconds.")
+    # Final evaluation
+    final_rmse, final_mae, final_mape = evaluate_model(
+        model, val_loader, device, node_features, edge_features, face_features, edge_map, face_map, means, stds
     )
-    print(f"Evaluation metrics: RMSE={rmse:.4f}, MAE={mae:.4f}, MAPE={mape:.2f}%")
-    torch.save(model.state_dict(), "traffic_ccnn.pt")
-    print("Model saved as traffic_ccnn.pt")
+    print(f"Final Evaluation: RMSE={final_rmse:.4f}, MAE={final_mae:.4f}, MAPE={final_mape:.2f}%")
+    torch.save(model.state_dict(), "traffic_ccnn_final.pt")
+    print("Final model saved as traffic_ccnn_final.pt.")
 
 if __name__ == "__main__":
     main()

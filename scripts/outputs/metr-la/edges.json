@@ -5,10 +5,10 @@
       "774011"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 1.2145469761978864,
-    "var_diff": 81.83423424814094,
-    "frac_both_nonzero": 0.9211601307189542,
-    "max_lag_corr": 0.49563490996808235
+    "mean_diff": 2.6132044572613142e-17,
+    "var_diff": 0.2683042396674034,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8658478647308334
   },
   {
     "nodes": [
@@ -16,10 +16,10 @@
       "774012"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.05062961527203473,
-    "var_diff": 18.366627450802845,
-    "frac_both_nonzero": 0.9245448179271709,
-    "max_lag_corr": 0.3702735665308093
+    "mean_diff": 2.705755448455986e-16,
+    "var_diff": 0.057095409564864835,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.971452292031263
   },
   {
     "nodes": [
@@ -27,10 +27,10 @@
       "773996"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 4.566355917366947,
-    "var_diff": 12.22812207769057,
-    "frac_both_nonzero": 0.9241071428571429,
-    "max_lag_corr": 0.6765034956405283
+    "mean_diff": 2.1195991708897326e-16,
+    "var_diff": 0.035239852479604525,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9823800717302691
   },
   {
     "nodes": [
@@ -38,10 +38,10 @@
       "773995"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -1.3946184608102499,
-    "var_diff": 26.529568081649227,
-    "frac_both_nonzero": 0.9241071428571429,
-    "max_lag_corr": 0.241339701871408
+    "mean_diff": 2.8263050588356e-16,
+    "var_diff": 0.09199414822740487,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9540029204548122
   },
   {
     "nodes": [
@@ -49,10 +49,10 @@
       "773975"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -1.878266723356009,
-    "var_diff": 85.1810670158856,
-    "frac_both_nonzero": 0.9235819327731093,
-    "max_lag_corr": 0.17802092872917033
+    "mean_diff": -7.393709436616337e-16,
+    "var_diff": 0.3009591246878367,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8495204197157633
   },
   {
     "nodes": [
@@ -60,10 +60,10 @@
       "773974"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 7.435973718190979,
-    "var_diff": 36.674959560713,
-    "frac_both_nonzero": 0.9363620448179272,
-    "max_lag_corr": 0.28053482336362195
+    "mean_diff": 2.3435881243692736e-16,
+    "var_diff": 0.1365601449581547,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9317199185901146
   },
   {
     "nodes": [
@@ -71,10 +71,10 @@
       "717592"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -4.323765617358054,
-    "var_diff": 127.1609051359025,
-    "frac_both_nonzero": 0.909547152194211,
-    "max_lag_corr": 0.43924900132035
+    "mean_diff": -5.703422426562392e-16,
+    "var_diff": 0.42690115154814584,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7865493976050321
   },
   {
     "nodes": [
@@ -82,10 +82,10 @@
       "717590"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -2.4148401606012775,
-    "var_diff": 50.47567145281029,
-    "frac_both_nonzero": 0.9093429038281979,
-    "max_lag_corr": 0.14756128057451692
+    "mean_diff": 1.0581404080116846e-15,
+    "var_diff": 0.13228155140307085,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9338592173454122
   },
   {
     "nodes": [
@@ -93,10 +93,10 @@
       "717587"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.4135501654365449,
-    "var_diff": 65.27991355061964,
-    "frac_both_nonzero": 0.90625,
-    "max_lag_corr": 0.14443669333879547
+    "mean_diff": -6.536122100840502e-16,
+    "var_diff": 0.16904779041428597,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9154760961773698
   },
   {
     "nodes": [
@@ -104,10 +104,10 @@
       "717585"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 0.8213432711047381,
-    "var_diff": 61.830431478466025,
-    "frac_both_nonzero": 0.8974381419234361,
-    "max_lag_corr": 0.6512142112436169
+    "mean_diff": 1.0577256136533891e-16,
+    "var_diff": 0.1601722845724843,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9199138495489654
   },
   {
     "nodes": [
@@ -115,10 +115,10 @@
       "717099"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 0.1127660207601559,
-    "var_diff": 77.71063190366094,
-    "frac_both_nonzero": 0.9002100840336135,
-    "max_lag_corr": 0.15584638537320403
+    "mean_diff": 1.9640512865289402e-16,
+    "var_diff": 0.2021060691750849,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8989469550871754
   },
   {
     "nodes": [
@@ -126,10 +126,10 @@
       "717583"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 0.2836566223711706,
-    "var_diff": 95.1032664169207,
-    "frac_both_nonzero": 0.9074463118580766,
-    "max_lag_corr": 0.008651866713024684
+    "mean_diff": -2.754234539081766e-16,
+    "var_diff": 0.25145873883532943,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8742706176490709
   },
   {
     "nodes": [
@@ -137,10 +137,10 @@
       "717582"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -3.407642003560684,
-    "var_diff": 182.76010167348676,
-    "frac_both_nonzero": 0.9070378151260504,
-    "max_lag_corr": 0.01974948908322327
+    "mean_diff": 5.981334646620341e-16,
+    "var_diff": 0.5304868379648592,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7347565517990533
   },
   {
     "nodes": [
@@ -148,10 +148,10 @@
       "717580"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 2.8192362940546594,
-    "var_diff": 154.4393220562684,
-    "frac_both_nonzero": 0.9098097572362278,
-    "max_lag_corr": 0.07083566287067697
+    "mean_diff": -6.217767430848746e-16,
+    "var_diff": 0.4685309371306011,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.765734505238372
   },
   {
     "nodes": [
@@ -159,10 +159,10 @@
       "716554"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 9.138529740599944,
-    "var_diff": 55.60505576588173,
-    "frac_both_nonzero": 0.9123774509803921,
-    "max_lag_corr": 0.26234722088656703
+    "mean_diff": -1.5181473513613349e-16,
+    "var_diff": 0.15967362257742723,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9201631797270347
   },
   {
     "nodes": [
@@ -170,10 +170,10 @@
       "717578"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -9.735148816471034,
-    "var_diff": 152.56374911317914,
-    "frac_both_nonzero": 0.9102766106442577,
-    "max_lag_corr": 0.24085596892965044
+    "mean_diff": 3.1856206717090307e-16,
+    "var_diff": 0.5394795397971569,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7302601980222967
   },
   {
     "nodes": [
@@ -181,10 +181,10 @@
       "773927"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 5.195196191902687,
-    "var_diff": 177.61952174300845,
-    "frac_both_nonzero": 0.9044117647058824,
-    "max_lag_corr": 0.7869715804410037
+    "mean_diff": -1.5928103358545154e-16,
+    "var_diff": 0.4408323113512283,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7795838209294811
   },
   {
     "nodes": [
@@ -192,10 +192,10 @@
       "774067"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.12746471273694662,
-    "var_diff": 384.67032251215795,
-    "frac_both_nonzero": 0.8757878151260504,
-    "max_lag_corr": 0.16265134449202787
+    "mean_diff": 2.505357924104498e-16,
+    "var_diff": 0.893352556288532,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5533236787281625
   },
   {
     "nodes": [
@@ -203,10 +203,10 @@
       "773916"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -2.6859342232263277,
-    "var_diff": 350.1687755600544,
-    "frac_both_nonzero": 0.8894724556489262,
-    "max_lag_corr": 0.18358125562063235
+    "mean_diff": -4.1977189059499205e-16,
+    "var_diff": 0.8385328655795932,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5807335261647818
   },
   {
     "nodes": [
@@ -214,10 +214,10 @@
       "773953"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 2.739507666492523,
-    "var_diff": 86.75206210823642,
-    "frac_both_nonzero": 0.9215686274509803,
-    "max_lag_corr": 0.9134231816641505
+    "mean_diff": 5.359143109177172e-16,
+    "var_diff": 0.2107748199049209,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8946125788752022
   },
   {
     "nodes": [
@@ -225,10 +225,10 @@
       "773954"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -1.8106378662576141,
-    "var_diff": 115.4519055728651,
-    "frac_both_nonzero": 0.9356325863678805,
-    "max_lag_corr": 0.2510596456379699
+    "mean_diff": -6.371241343418061e-16,
+    "var_diff": 0.40542046197439435,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7972897448567283
   },
   {
     "nodes": [
@@ -236,10 +236,10 @@
       "717576"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 1.006105601963007,
-    "var_diff": 309.6292011687676,
-    "frac_both_nonzero": 0.863562091503268,
-    "max_lag_corr": 0.825567355183573
+    "mean_diff": 1.9246458224908727e-16,
+    "var_diff": 0.7036930105220688,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6481534578328163
   },
   {
     "nodes": [
@@ -247,10 +247,10 @@
       "718204"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 1.1703748860655374,
-    "var_diff": 99.89106236029454,
-    "frac_both_nonzero": 0.86312441643324,
-    "max_lag_corr": 0.2922918451976896
+    "mean_diff": 3.534047932677206e-16,
+    "var_diff": 0.1858912486604167,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9070543676490921
   },
   {
     "nodes": [
@@ -258,10 +258,10 @@
       "773904"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.09212022772071786,
-    "var_diff": 350.28129616473365,
-    "frac_both_nonzero": 0.8515406162464986,
-    "max_lag_corr": 0.9417304782208484
+    "mean_diff": 5.3093677861817175e-17,
+    "var_diff": 0.7461255411492602,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6269371939456473
   },
   {
     "nodes": [
@@ -269,10 +269,10 @@
       "773906"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -4.840815203396173,
-    "var_diff": 124.20965622717748,
-    "frac_both_nonzero": 0.9225023342670402,
-    "max_lag_corr": 0.3342620777777374
+    "mean_diff": -2.7210509904181305e-16,
+    "var_diff": 0.3486169196236158,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8256915216922099
   },
   {
     "nodes": [
@@ -280,10 +280,10 @@
       "761003"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.26106940461369726,
-    "var_diff": 217.545201571321,
-    "frac_both_nonzero": 0.9218020541549953,
-    "max_lag_corr": 0.3448328022917815
+    "mean_diff": -2.820601636409037e-17,
+    "var_diff": 0.5733309255316932,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7133345075923304
   },
   {
     "nodes": [
@@ -291,10 +291,10 @@
       "718499"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 5.808494891011959,
-    "var_diff": 233.6666033815537,
-    "frac_both_nonzero": 0.9086426237161531,
-    "max_lag_corr": 0.4305201047237035
+    "mean_diff": 1.6757692075136047e-16,
+    "var_diff": 0.6158252482820191,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6920873440396322
   },
   {
     "nodes": [
@@ -302,10 +302,10 @@
       "773869"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -1.0222644613400913,
-    "var_diff": 389.61877371763813,
-    "frac_both_nonzero": 0.8614320728291317,
-    "max_lag_corr": 0.45018858801396144
+    "mean_diff": 2.521949698436316e-16,
+    "var_diff": 0.8886328858238649,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5556835135230264
   },
   {
     "nodes": [
@@ -313,10 +313,10 @@
       "717573"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -2.476516926214931,
-    "var_diff": 279.0039363678746,
-    "frac_both_nonzero": 0.8714402427637722,
-    "max_lag_corr": 0.9321873407288186
+    "mean_diff": -6.557898804651012e-16,
+    "var_diff": 0.5969460109044105,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7015269666154459
   },
   {
     "nodes": [
@@ -324,10 +324,10 @@
       "717572"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.4744621807056156,
-    "var_diff": 173.5224117070024,
-    "frac_both_nonzero": 0.9203431372549019,
-    "max_lag_corr": 0.5346701134255747
+    "mean_diff": -2.6712756674226765e-16,
+    "var_diff": 0.4629799250018315,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7685100131701448
   },
   {
     "nodes": [
@@ -335,10 +335,10 @@
       "760987"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 2.9641581748440116,
-    "var_diff": 476.8766254711999,
-    "frac_both_nonzero": 0.8381769374416433,
-    "max_lag_corr": 0.3722181733996763
+    "mean_diff": 4.305565439106737e-16,
+    "var_diff": 0.9472588881441955,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5263705106483318
   },
   {
     "nodes": [
@@ -346,10 +346,10 @@
       "774204"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 3.4006565357624527,
-    "var_diff": 726.2553902685441,
-    "frac_both_nonzero": 0.7951388888888888,
-    "max_lag_corr": 0.34666476714835326
+    "mean_diff": 6.118216784857839e-17,
+    "var_diff": 1.2890493716616336,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.355475259466424
   },
   {
     "nodes": [
@@ -357,10 +357,10 @@
       "718496"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 1.5988035607761621,
-    "var_diff": 63.221508151516346,
-    "frac_both_nonzero": 0.8890639589169,
-    "max_lag_corr": 0.908176185230289
+    "mean_diff": 1.1614242032272507e-16,
+    "var_diff": 0.13166752610272256,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.934166230900837
   },
   {
     "nodes": [
@@ -368,10 +368,10 @@
       "773880"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -12.479977963407585,
-    "var_diff": 317.5724280848323,
-    "frac_both_nonzero": 0.8860294117647058,
-    "max_lag_corr": 0.22352824505834545
+    "mean_diff": -4.989976130294224e-16,
+    "var_diff": 0.8005042506786973,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5997478335624613
   },
   {
     "nodes": [
@@ -379,10 +379,10 @@
       "717570"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 0.7505057462799934,
-    "var_diff": 36.46268888269061,
-    "frac_both_nonzero": 0.9281337535014006,
-    "max_lag_corr": 0.6658382344050607
+    "mean_diff": 2.1310060157428575e-16,
+    "var_diff": 0.11636282645704103,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9418185801654146
   },
   {
     "nodes": [
@@ -390,10 +390,10 @@
       "717571"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 3.598420479302832,
-    "var_diff": 141.44234595722563,
-    "frac_both_nonzero": 0.9305555555555556,
-    "max_lag_corr": 0.06173092544419312
+    "mean_diff": 5.033529537915246e-16,
+    "var_diff": 0.4420377574483687,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7789810964652828
   },
   {
     "nodes": [
@@ -401,10 +401,10 @@
       "773939"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 7.795894677315371,
-    "var_diff": 156.47675717408947,
-    "frac_both_nonzero": 0.9351073762838469,
-    "max_lag_corr": 0.8321164328642737
+    "mean_diff": -3.899066967977199e-16,
+    "var_diff": 0.3034665844135503,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8482666930488479
   },
   {
     "nodes": [
@@ -412,10 +412,10 @@
       "717492"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -3.1827600831999465,
-    "var_diff": 175.42908372352863,
-    "frac_both_nonzero": 0.9328606442577031,
-    "max_lag_corr": 0.7761857430970179
+    "mean_diff": 7.142758849847592e-16,
+    "var_diff": 0.34790574488844955,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8260471106923437
   },
   {
     "nodes": [
@@ -423,10 +423,10 @@
       "717493"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 5.110680001167133,
-    "var_diff": 223.38164334381364,
-    "frac_both_nonzero": 0.9259161998132587,
-    "max_lag_corr": 0.446370156582954
+    "mean_diff": -9.233322415656644e-16,
+    "var_diff": 0.6048222855998411,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6975888255621068
   },
   {
     "nodes": [
@@ -434,10 +434,10 @@
       "769467"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -5.597370302287582,
-    "var_diff": 224.08297494518976,
-    "frac_both_nonzero": 0.9282212885154062,
-    "max_lag_corr": 0.443795605219013
+    "mean_diff": 6.180435938602155e-16,
+    "var_diff": 0.6012786041307329,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6993606666712012
   },
   {
     "nodes": [
@@ -445,10 +445,10 @@
       "769346"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 0.40247739141953087,
-    "var_diff": 193.64912334264113,
-    "frac_both_nonzero": 0.9343487394957983,
-    "max_lag_corr": 0.44974329277572755
+    "mean_diff": 1.5845144486886063e-16,
+    "var_diff": 0.5285510522391208,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7357244461998563
   },
   {
     "nodes": [
@@ -456,10 +456,10 @@
       "769345"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 1.2799770371111407,
-    "var_diff": 177.8418412213304,
-    "frac_both_nonzero": 0.9336776377217554,
-    "max_lag_corr": 0.5172558764986656
+    "mean_diff": -7.756654500124853e-16,
+    "var_diff": 0.4716762309166431,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7641618602467369
   },
   {
     "nodes": [
@@ -467,10 +467,10 @@
       "717495"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -1.1370989020608244,
-    "var_diff": 230.95374023336186,
-    "frac_both_nonzero": 0.9270833333333334,
-    "max_lag_corr": 0.5003339767593142
+    "mean_diff": 3.4510890610181164e-16,
+    "var_diff": 0.5548492357105707,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7225753546830026
   },
   {
     "nodes": [
@@ -478,10 +478,10 @@
       "717497"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -1.7379468222474175,
-    "var_diff": 235.0614225125745,
-    "frac_both_nonzero": 0.9275501867413632,
-    "max_lag_corr": 0.4770514147007826
+    "mean_diff": 4.114760034290831e-16,
+    "var_diff": 0.5600123637830492,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7199937905737722
   },
   {
     "nodes": [
@@ -489,10 +489,10 @@
       "769359"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 4.738082408889482,
-    "var_diff": 192.30779596383337,
-    "frac_both_nonzero": 0.9324229691876751,
-    "max_lag_corr": 0.49633611899484104
+    "mean_diff": -4.405116085097644e-16,
+    "var_diff": 0.5238607280750598,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7380696085835978
   },
   {
     "nodes": [
@@ -500,10 +500,10 @@
       "769358"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.18173441830435877,
-    "var_diff": 159.58129126665227,
-    "frac_both_nonzero": 0.9345238095238095,
-    "max_lag_corr": 0.5332507262155752
+    "mean_diff": 9.208434754158917e-17,
+    "var_diff": 0.45987104097993325,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7700644548191835
   },
   {
     "nodes": [
@@ -511,10 +511,10 @@
       "717498"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 6.222192198638715,
-    "var_diff": 54.62972923805108,
-    "frac_both_nonzero": 0.9327731092436975,
-    "max_lag_corr": 0.8723048323563455
+    "mean_diff": -7.798133935954398e-17,
+    "var_diff": 0.16270806875493277,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.918645956068579
   },
   {
     "nodes": [
@@ -522,10 +522,10 @@
       "769444"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -4.373523078212767,
-    "var_diff": 281.78640254085366,
-    "frac_both_nonzero": 0.8910480859010271,
-    "max_lag_corr": 0.48090304343233276
+    "mean_diff": 2.389215503781773e-16,
+    "var_diff": 0.7655847234575646,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6172075958432476
   },
   {
     "nodes": [
@@ -533,10 +533,10 @@
       "769443"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -2.8820262595779056,
-    "var_diff": 151.98833051045983,
-    "frac_both_nonzero": 0.892623716153128,
-    "max_lag_corr": 0.5154200850185909
+    "mean_diff": -6.367093399835106e-17,
+    "var_diff": 0.33438889898365104,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8328055348101007
   },
   {
     "nodes": [
@@ -544,10 +544,10 @@
       "717499"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 4.163749238121174,
-    "var_diff": 309.51343051485935,
-    "frac_both_nonzero": 0.8919817927170869,
-    "max_lag_corr": 0.5014187358127884
+    "mean_diff": 1.3273419465454294e-17,
+    "var_diff": 0.7721195664915085,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6139401770178984
   },
   {
     "nodes": [
@@ -555,10 +555,10 @@
       "769430"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.9341356565774459,
-    "var_diff": 237.49994415094983,
-    "frac_both_nonzero": 0.8806314192343604,
-    "max_lag_corr": 0.8787621995979019
+    "mean_diff": -2.25648130912723e-16,
+    "var_diff": 0.4690915078949427,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7654542229830524
   },
   {
     "nodes": [
@@ -566,10 +566,10 @@
       "769431"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 2.200512589294977,
-    "var_diff": 224.5988622789575,
-    "frac_both_nonzero": 0.8805730625583567,
-    "max_lag_corr": 0.564627677222697
+    "mean_diff": 2.870376959404491e-16,
+    "var_diff": 0.433643951029808,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7831780048699942
   },
   {
     "nodes": [
@@ -577,10 +577,10 @@
       "760024"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -5.029627661249686,
-    "var_diff": 332.91421906990587,
-    "frac_both_nonzero": 0.8927404295051354,
-    "max_lag_corr": 0.5345362239433834
+    "mean_diff": -1.0618735572363435e-16,
+    "var_diff": 0.779710618556743,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6101446529894965
   },
   {
     "nodes": [
@@ -588,10 +588,10 @@
       "764794"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.23867751961895875,
-    "var_diff": 223.53427121534506,
-    "frac_both_nonzero": 0.9364204014939309,
-    "max_lag_corr": 0.5002682441136682
+    "mean_diff": 2.339440180786319e-16,
+    "var_diff": 0.5628995428170255,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.718550200046834
   },
   {
     "nodes": [
@@ -599,10 +599,10 @@
       "764781"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -2.2949246480999803,
-    "var_diff": 190.69103572852416,
-    "frac_both_nonzero": 0.9361577964519141,
-    "max_lag_corr": 0.4707478969219428
+    "mean_diff": -2.8454892979067645e-16,
+    "var_diff": 0.5280067829503324,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7359965807256768
   },
   {
     "nodes": [
@@ -610,10 +610,10 @@
       "765099"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 2.479850933428927,
-    "var_diff": 185.75658793573274,
-    "frac_both_nonzero": 0.9363328664799253,
-    "max_lag_corr": 0.47543872161782086
+    "mean_diff": 4.562737941249913e-18,
+    "var_diff": 0.5193803842910772,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7403097803560775
   },
   {
     "nodes": [
@@ -621,10 +621,10 @@
       "717502"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 0.39330903657759403,
-    "var_diff": 87.58904400976789,
-    "frac_both_nonzero": 0.9090511204481793,
-    "max_lag_corr": 0.9470238173099008
+    "mean_diff": 8.918078703352104e-18,
+    "var_diff": 0.20603562777267612,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8969821756901065
   },
   {
     "nodes": [
@@ -632,10 +632,10 @@
       "772140"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -1.612366729099047,
-    "var_diff": 203.33262668961518,
-    "frac_both_nonzero": 0.9092845471521942,
-    "max_lag_corr": 0.31557823942479024
+    "mean_diff": -2.1776703810510952e-16,
+    "var_diff": 0.49290960029755954,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7535451753003028
   },
   {
     "nodes": [
@@ -643,10 +643,10 @@
       "772167"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 14.361895695778308,
-    "var_diff": 211.9508923737505,
-    "frac_both_nonzero": 0.9057247899159664,
-    "max_lag_corr": 0.35204671924681097
+    "mean_diff": 1.066021500819298e-16,
+    "var_diff": 0.6999630830535841,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6500184142790897
   },
   {
     "nodes": [
@@ -654,10 +654,10 @@
       "772168"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -16.894038622393403,
-    "var_diff": 117.91764413345753,
-    "frac_both_nonzero": 0.9331816059757236,
-    "max_lag_corr": 0.3839488222785491
+    "mean_diff": -1.953681427571554e-16,
+    "var_diff": 0.4997708874725542,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7501145224633415
   },
   {
     "nodes": [
@@ -665,10 +665,10 @@
       "717504"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 3.3257936160575348,
-    "var_diff": 148.25819644205455,
-    "frac_both_nonzero": 0.909109477124183,
-    "max_lag_corr": 0.8976660183036146
+    "mean_diff": 8.87659926752256e-17,
+    "var_diff": 0.3297540754972556,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8351229445953844
   },
   {
     "nodes": [
@@ -676,10 +676,10 @@
       "772151"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 0.2509554979399167,
-    "var_diff": 125.37079431011453,
-    "frac_both_nonzero": 0.90843837535014,
-    "max_lag_corr": 0.9021050601985601
+    "mean_diff": 3.983581318479896e-16,
+    "var_diff": 0.2801444798605458,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8599277465800268
   },
   {
     "nodes": [
@@ -687,10 +687,10 @@
       "772178"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.20152190505831966,
-    "var_diff": 272.089532260099,
-    "frac_both_nonzero": 0.9352240896358543,
-    "max_lag_corr": 0.2641918787673864
+    "mean_diff": -9.955064599090721e-17,
+    "var_diff": 0.7565283881594493,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6217357657442925
   },
   {
     "nodes": [
@@ -698,10 +698,10 @@
       "772597"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -4.609216232789412,
-    "var_diff": 217.29980183480103,
-    "frac_both_nonzero": 0.9360702614379085,
-    "max_lag_corr": 0.25753494870857274
+    "mean_diff": 1.6011062230204242e-16,
+    "var_diff": 0.6427002077919922,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6786498610956595
   },
   {
     "nodes": [
@@ -709,10 +709,10 @@
       "772596"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.16142122358202546,
-    "var_diff": 160.36615122919068,
-    "frac_both_nonzero": 0.9371790382819795,
-    "max_lag_corr": 0.30156477222692635
+    "mean_diff": -6.46249610224306e-16,
+    "var_diff": 0.4905330684085028,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7547334384126624
   },
   {
     "nodes": [
@@ -720,10 +720,10 @@
       "717508"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": 6.842304757551168,
-    "var_diff": 286.8281700139509,
-    "frac_both_nonzero": 0.8954248366013072,
-    "max_lag_corr": 0.3799475593873962
+    "mean_diff": 7.574144982474856e-16,
+    "var_diff": 0.7109495576943625,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6445251840841005
   },
   {
     "nodes": [
@@ -731,10 +731,10 @@
       "717510"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -0.05234824253775565,
-    "var_diff": 437.7575153013849,
-    "frac_both_nonzero": 0.8284021942110178,
-    "max_lag_corr": 0.29547269036476637
+    "mean_diff": -2.7210509904181305e-16,
+    "var_diff": 0.9108714156923751,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5445642506064577
   },
   {
     "nodes": [
@@ -742,10 +742,10 @@
       "717513"
     ],
     "road": "Ventura Freeway",
-    "mean_diff": -2.210804425937041,
-    "var_diff": 83.49219075311437,
-    "frac_both_nonzero": 0.8491771708683473,
-    "max_lag_corr": 0.5811193168736795
+    "mean_diff": -1.252678962052249e-16,
+    "var_diff": 0.16986545738218445,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9150672636462499
   },
   {
     "nodes": [
@@ -753,10 +753,10 @@
       "767610"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -3.449368034250737,
-    "var_diff": 38.339120071430806,
-    "frac_both_nonzero": 0.8862920168067226,
-    "max_lag_corr": 0.27059016898692356
+    "mean_diff": -7.258901270170317e-17,
+    "var_diff": 0.08759895172078966,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.95620051977699
   },
   {
     "nodes": [
@@ -764,10 +764,10 @@
       "767585"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -1.9392942477917092,
-    "var_diff": 73.12112086329003,
-    "frac_both_nonzero": 0.8834908963585434,
-    "max_lag_corr": 0.1684192149775765
+    "mean_diff": -2.426546996028363e-16,
+    "var_diff": 0.16757360877430122,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9162131875901376
   },
   {
     "nodes": [
@@ -775,10 +775,10 @@
       "718076"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": 6.465224249421991,
-    "var_diff": 728.940141488441,
-    "frac_both_nonzero": 0.7628384687208216,
-    "max_lag_corr": 0.061468282833352525
+    "mean_diff": 4.1313518086226493e-16,
+    "var_diff": 1.2254110109389198,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.3872944424348726
   },
   {
     "nodes": [
@@ -786,10 +786,10 @@
       "767470"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -0.8522838186200409,
-    "var_diff": 696.694324908969,
-    "frac_both_nonzero": 0.7642682072829131,
-    "max_lag_corr": 0.13833823918695068
+    "mean_diff": -8.337366601738478e-17,
+    "var_diff": 1.2427409359276858,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.3786294756224132
   },
   {
     "nodes": [
@@ -797,10 +797,10 @@
       "767471"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -1.001303658037289,
-    "var_diff": 82.83302029152826,
-    "frac_both_nonzero": 0.8810690943043884,
-    "max_lag_corr": 0.2014041173078336
+    "mean_diff": 3.9099553198824543e-16,
+    "var_diff": 0.20371031088381278,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8981448341534672
   },
   {
     "nodes": [
@@ -808,10 +808,10 @@
       "718072"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -1.9569121514346475,
-    "var_diff": 362.27205107367286,
-    "frac_both_nonzero": 0.8394316059757236,
-    "max_lag_corr": 0.5224589549580363
+    "mean_diff": -3.26857954336812e-16,
+    "var_diff": 0.8054129870519104,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5972934684439624
   },
   {
     "nodes": [
@@ -819,10 +819,10 @@
       "767454"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -1.5664841631096882,
-    "var_diff": 513.4728161753419,
-    "frac_both_nonzero": 0.820203081232493,
-    "max_lag_corr": 0.7439923404954232
+    "mean_diff": -1.3439337208772473e-16,
+    "var_diff": 1.0380710192025837,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.48096444366326874
   },
   {
     "nodes": [
@@ -830,10 +830,10 @@
       "767455"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -1.5373386044232509,
-    "var_diff": 121.4094406791912,
-    "frac_both_nonzero": 0.8749708216619981,
-    "max_lag_corr": 0.0725782710058418
+    "mean_diff": -9.944694740133335e-17,
+    "var_diff": 0.24822199228706784,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8758889924372012
   },
   {
     "nodes": [
@@ -841,10 +841,10 @@
       "762329"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -0.7087089465415797,
-    "var_diff": 280.6159545387626,
-    "frac_both_nonzero": 0.8814484126984127,
-    "max_lag_corr": 0.06793198265634248
+    "mean_diff": 2.1735224374681407e-16,
+    "var_diff": 0.7105568475052644,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6447215401673793
   },
   {
     "nodes": [
@@ -852,10 +852,10 @@
       "767620"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": 4.1273445836668,
-    "var_diff": 232.71948774589072,
-    "frac_both_nonzero": 0.8903478057889822,
-    "max_lag_corr": 0.08559858331432678
+    "mean_diff": -4.3138613262726455e-17,
+    "var_diff": 0.6635941106263618,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6682029092571339
   },
   {
     "nodes": [
@@ -863,10 +863,10 @@
       "767621"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -1.9758864309612736,
-    "var_diff": 55.61639807129782,
-    "frac_both_nonzero": 0.904703548085901,
-    "max_lag_corr": 0.1303100510820775
+    "mean_diff": 1.178534470506938e-16,
+    "var_diff": 0.13635155081363332,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9318242176365114
   },
   {
     "nodes": [
@@ -874,10 +874,10 @@
       "767572"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": 1.7111442146302964,
-    "var_diff": 179.17074630863635,
-    "frac_both_nonzero": 0.9045284780578898,
-    "max_lag_corr": 0.06914134951967452
+    "mean_diff": -6.2675427538442e-16,
+    "var_diff": 0.48392719293961484,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7580363761524497
   },
   {
     "nodes": [
@@ -885,10 +885,10 @@
       "767573"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -4.279927341306894,
-    "var_diff": 83.06097912187705,
-    "frac_both_nonzero": 0.9339110644257703,
-    "max_lag_corr": 0.08399289418768494
+    "mean_diff": 4.687176248738547e-16,
+    "var_diff": 0.2545992506177217,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.872700359648994
   },
   {
     "nodes": [
@@ -896,10 +896,10 @@
       "718066"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": 1.0796353610888798,
-    "var_diff": 29.27974331706067,
-    "frac_both_nonzero": 0.9341444911297853,
-    "max_lag_corr": 0.9031829855302055
+    "mean_diff": -2.2528518584921447e-16,
+    "var_diff": 0.08495158395605985,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9575242034461455
   },
   {
     "nodes": [
@@ -907,10 +907,10 @@
       "767554"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": 2.807944010937708,
-    "var_diff": 108.31606138307927,
-    "frac_both_nonzero": 0.9341444911297853,
-    "max_lag_corr": 0.0985532346203424
+    "mean_diff": 2.5820948803891556e-16,
+    "var_diff": 0.34545156830221313,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8272741954727173
   },
   {
     "nodes": [
@@ -918,10 +918,10 @@
       "767542"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -2.81393479845642,
-    "var_diff": 104.01429602390887,
-    "frac_both_nonzero": 0.9341736694677871,
-    "max_lag_corr": 0.11258417237349795
+    "mean_diff": 7.81887365386917e-17,
+    "var_diff": 0.33824162833510535,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8308791657798076
   },
   {
     "nodes": [
@@ -929,10 +929,10 @@
       "767541"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": 0.2733313580061655,
-    "var_diff": 95.00230393842189,
-    "frac_both_nonzero": 0.9372957516339869,
-    "max_lag_corr": 0.06911603751153496
+    "mean_diff": -4.728655684568092e-17,
+    "var_diff": 0.30605753130010965,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8469712164144556
   },
   {
     "nodes": [
@@ -940,10 +940,10 @@
       "767523"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -2.532547255013116,
-    "var_diff": 7.551374903892653,
-    "frac_both_nonzero": 0.9372957516339869,
-    "max_lag_corr": 0.6843330304320153
+    "mean_diff": -1.2443830748863401e-18,
+    "var_diff": 0.026717895949949583,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.98664105038596
   },
   {
     "nodes": [
@@ -951,10 +951,10 @@
       "718064"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": 2.939591542635573,
-    "var_diff": 117.73032582686018,
-    "frac_both_nonzero": 0.9371206816059757,
-    "max_lag_corr": 0.015396254708878211
+    "mean_diff": -3.4427931738522073e-17,
+    "var_diff": 0.36644018269978307,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8167798878167761
   },
   {
     "nodes": [
@@ -962,10 +962,10 @@
       "767509"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": 1.4860777297029923,
-    "var_diff": 123.89806717990645,
-    "frac_both_nonzero": 0.9349323062558357,
-    "max_lag_corr": 0.13708138632197764
+    "mean_diff": 4.529554392586278e-16,
+    "var_diff": 0.3912009763217345,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8043994891911582
   },
   {
     "nodes": [
@@ -973,10 +973,10 @@
       "767494"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -1.2472281968342893,
-    "var_diff": 18.620717354676476,
-    "frac_both_nonzero": 0.9351365546218487,
-    "max_lag_corr": 0.4837081867827676
+    "mean_diff": -1.6939164606890305e-16,
+    "var_diff": 0.07221596658992867,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9638920122071306
   },
   {
     "nodes": [
@@ -984,10 +984,10 @@
       "767495"
     ],
     "road": "Glendale Freeway",
-    "mean_diff": -1.3517394110421947,
-    "var_diff": 157.46117279471264,
-    "frac_both_nonzero": 0.9029820261437909,
-    "max_lag_corr": 0.07416047385427463
+    "mean_diff": -2.9450399438976715e-16,
+    "var_diff": 0.43700056794602554,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7814996915271243
   },
   {
     "nodes": [
@@ -995,10 +995,10 @@
       "768066"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 1.5481631773079603,
-    "var_diff": 264.6011982191037,
-    "frac_both_nonzero": 0.924749066293184,
-    "max_lag_corr": -0.032794634320509865
+    "mean_diff": 1.1614242032272508e-17,
+    "var_diff": 0.7239506574644398,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6380246334062271
   },
   {
     "nodes": [
@@ -1006,10 +1006,10 @@
       "764858"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 1.1685730773790999,
-    "var_diff": 304.43148616456807,
-    "frac_both_nonzero": 0.9320436507936508,
-    "max_lag_corr": -0.025707915114234568
+    "mean_diff": -1.2029036390567954e-16,
+    "var_diff": 0.8326118462338676,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5836940333469188
   },
   {
     "nodes": [
@@ -1017,10 +1017,10 @@
       "717491"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 2.579258671061017,
-    "var_diff": 297.4392393095862,
-    "frac_both_nonzero": 0.8821195144724556,
-    "max_lag_corr": 0.5192185781434362
+    "mean_diff": 3.782924547654474e-16,
+    "var_diff": 0.7535884244330583,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6232057496987591
   },
   {
     "nodes": [
@@ -1028,10 +1028,10 @@
       "717490"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 1.4840890407088758,
-    "var_diff": 180.7159190531005,
-    "frac_both_nonzero": 0.8816526610644257,
-    "max_lag_corr": -0.051290279679665554
+    "mean_diff": 4.3138613262726455e-17,
+    "var_diff": 0.3909692460564235,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8045153586390638
   },
   {
     "nodes": [
@@ -1039,10 +1039,10 @@
       "717489"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -0.014811109629036782,
-    "var_diff": 228.16307415482754,
-    "frac_both_nonzero": 0.8746498599439776,
-    "max_lag_corr": 0.9177323300968692
+    "mean_diff": -4.757691289648773e-16,
+    "var_diff": 0.5238050166458668,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7380974656724517
   },
   {
     "nodes": [
@@ -1050,10 +1050,10 @@
       "765604"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -3.948260519485572,
-    "var_diff": 194.5468934472347,
-    "frac_both_nonzero": 0.9224439775910365,
-    "max_lag_corr": 0.01934225897902868
+    "mean_diff": 2.679571554588586e-16,
+    "var_diff": 0.6365776815026365,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6817111222286144
   },
   {
     "nodes": [
@@ -1061,10 +1061,10 @@
       "764101"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -2.3734085995509315,
-    "var_diff": 220.50247386383077,
-    "frac_both_nonzero": 0.9296510270774977,
-    "max_lag_corr": 0.015492966500680728
+    "mean_diff": -2.1569306631363228e-16,
+    "var_diff": 0.5569448600954063,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7215275396630564
   },
   {
     "nodes": [
@@ -1072,10 +1072,10 @@
       "768469"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 1.6452911141308375,
-    "var_diff": 412.5667672195263,
-    "frac_both_nonzero": 0.9262663398692811,
-    "max_lag_corr": -0.1252296897779007
+    "mean_diff": 2.737642764749948e-16,
+    "var_diff": 1.0048040626176464,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.4975979186076015
   },
   {
     "nodes": [
@@ -1083,10 +1083,10 @@
       "717488"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 0.21332119653416926,
-    "var_diff": 257.2980479771766,
-    "frac_both_nonzero": 0.9338235294117647,
-    "max_lag_corr": -0.02719226208419226
+    "mean_diff": -1.4372624514937227e-16,
+    "var_diff": 0.7300293193175211,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6349853014593787
   },
   {
     "nodes": [
@@ -1094,10 +1094,10 @@
       "764760"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -0.73859158246632,
-    "var_diff": 308.9801572997677,
-    "frac_both_nonzero": 0.9335901027077498,
-    "max_lag_corr": -0.04338380158021947
+    "mean_diff": 3.7352231964504975e-16,
+    "var_diff": 0.8398747632656995,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5800625745106617
   },
   {
     "nodes": [
@@ -1105,10 +1105,10 @@
       "717608"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -1.53312762605042,
-    "var_diff": 360.576043635083,
-    "frac_both_nonzero": 0.9366830065359477,
-    "max_lag_corr": -0.1332727790143965
+    "mean_diff": -6.300726302507835e-16,
+    "var_diff": 0.9361304415646853,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.53193473152679
   },
   {
     "nodes": [
@@ -1116,10 +1116,10 @@
       "764106"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 6.578710454089044,
-    "var_diff": 176.62462583872622,
-    "frac_both_nonzero": 0.9372957516339869,
-    "max_lag_corr": -0.01624430365917354
+    "mean_diff": 1.7172486433431494e-16,
+    "var_diff": 0.5282631315169295,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.735868402196393
   },
   {
     "nodes": [
@@ -1127,10 +1127,10 @@
       "764766"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -6.469775294377009,
-    "var_diff": 147.6880828729573,
-    "frac_both_nonzero": 0.9371498599439776,
-    "max_lag_corr": -0.06333123701542659
+    "mean_diff": 2.7210509904181305e-16,
+    "var_diff": 0.47785969617546287,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7610701223464654
   },
   {
     "nodes": [
@@ -1138,10 +1138,10 @@
       "765176"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -0.03217207021697569,
-    "var_diff": 270.2346559373783,
-    "frac_both_nonzero": 0.9353699813258637,
-    "max_lag_corr": -0.02882729158527481
+    "mean_diff": -2.3850675601988185e-17,
+    "var_diff": 0.7407050197863905,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6296474512920851
   },
   {
     "nodes": [
@@ -1149,10 +1149,10 @@
       "717486"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 7.002583023950321,
-    "var_diff": 238.49723274680576,
-    "frac_both_nonzero": 0.9342320261437909,
-    "max_lag_corr": 0.04633912974020912
+    "mean_diff": 3.4656068635584574e-16,
+    "var_diff": 0.7100093375061535,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6449952918103575
   },
   {
     "nodes": [
@@ -1160,10 +1160,10 @@
       "764949"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -0.07235654678538081,
-    "var_diff": 171.54806834659436,
-    "frac_both_nonzero": 0.9360702614379085,
-    "max_lag_corr": 0.08198806401927447
+    "mean_diff": -9.706187984113453e-17,
+    "var_diff": 0.6196951343352154,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6901523955853512
   },
   {
     "nodes": [
@@ -1171,10 +1171,10 @@
       "764424"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -7.929964312113735,
-    "var_diff": 221.67301029763541,
-    "frac_both_nonzero": 0.9070378151260504,
-    "max_lag_corr": 0.03970449013314724
+    "mean_diff": -1.526443238527244e-16,
+    "var_diff": 0.675486565965796,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6622566789930945
   },
   {
     "nodes": [
@@ -1182,10 +1182,10 @@
       "717610"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 3.1801566344130245,
-    "var_diff": 82.68202048374705,
-    "frac_both_nonzero": 0.9081465919701214,
-    "max_lag_corr": 0.0946708437457484
+    "mean_diff": -5.807121016136254e-16,
+    "var_diff": 0.21264603057275447,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.893676973882631
   },
   {
     "nodes": [
@@ -1193,10 +1193,10 @@
       "769418"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 8.201156944259187,
-    "var_diff": 555.3035649288007,
-    "frac_both_nonzero": 0.8157096171802054,
-    "max_lag_corr": -0.08229954754214902
+    "mean_diff": 3.019702928390852e-16,
+    "var_diff": 1.2478564575564939,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.37607171180467097
   },
   {
     "nodes": [
@@ -1204,10 +1204,10 @@
       "769405"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 7.995379529126464,
-    "var_diff": 98.02875028258109,
-    "frac_both_nonzero": 0.8438958916900093,
-    "max_lag_corr": 0.19031177977820662
+    "mean_diff": -2.3228484064545015e-16,
+    "var_diff": 0.21186270362195858,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8940686377739592
   },
   {
     "nodes": [
@@ -1215,10 +1215,10 @@
       "769402"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -14.1522051760519,
-    "var_diff": 330.72485404736386,
-    "frac_both_nonzero": 0.8414740896358543,
-    "max_lag_corr": 0.21196463922310607
+    "mean_diff": 6.346353681920334e-16,
+    "var_diff": 1.010501505386108,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.4947491911458039
   },
   {
     "nodes": [
@@ -1226,10 +1226,10 @@
       "769403"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -5.492587972689075,
-    "var_diff": 142.7731021615653,
-    "frac_both_nonzero": 0.9331816059757236,
-    "max_lag_corr": 0.10595671550508592
+    "mean_diff": -1.3314898901283838e-16,
+    "var_diff": 0.4561772903589159,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7719113289499756
   },
   {
     "nodes": [
@@ -1237,10 +1237,10 @@
       "717483"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 5.3968330040349475,
-    "var_diff": 204.66300121282765,
-    "frac_both_nonzero": 0.923202614379085,
-    "max_lag_corr": 0.09859844963713449
+    "mean_diff": -3.368130189359027e-16,
+    "var_diff": 0.615762866343862,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6921185330526461
   },
   {
     "nodes": [
@@ -1248,10 +1248,10 @@
       "769388"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -3.476233525817735,
-    "var_diff": 264.8592718319254,
-    "frac_both_nonzero": 0.9009103641456583,
-    "max_lag_corr": 0.1871237579935677
+    "mean_diff": 4.840650161307863e-16,
+    "var_diff": 0.731520458082102,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6342397323818776
   },
   {
     "nodes": [
@@ -1259,10 +1259,10 @@
       "716571"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -3.6759946918582247,
-    "var_diff": 209.56880594734858,
-    "frac_both_nonzero": 0.8978174603174603,
-    "max_lag_corr": 0.040191246085059196
+    "mean_diff": -1.6094021101863333e-16,
+    "var_diff": 0.5853006863360186,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7073496256910434
   },
   {
     "nodes": [
@@ -1270,10 +1270,10 @@
       "764120"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -0.6764407962258978,
-    "var_diff": 80.06163019264129,
-    "frac_both_nonzero": 0.9241071428571429,
-    "max_lag_corr": 0.15646536320173157
+    "mean_diff": 3.6916697888294755e-17,
+    "var_diff": 0.2604834269829568,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8697582714487788
   },
   {
     "nodes": [
@@ -1281,10 +1281,10 @@
       "717481"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 6.610879386476813,
-    "var_diff": 478.47445165990007,
-    "frac_both_nonzero": 0.8492647058823529,
-    "max_lag_corr": -0.009680856757487531
+    "mean_diff": -1.7255445305090582e-16,
+    "var_diff": 0.9158191988795059,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5420903552849105
   },
   {
     "nodes": [
@@ -1292,10 +1292,10 @@
       "717480"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -1.739915700076327,
-    "var_diff": 442.50957088503105,
-    "frac_both_nonzero": 0.8477474323062558,
-    "max_lag_corr": 0.24858157187650456
+    "mean_diff": 9.540270240795274e-17,
+    "var_diff": 0.7842588779365928,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6078705265785248
   },
   {
     "nodes": [
@@ -1303,10 +1303,10 @@
       "769373"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 6.444156620981726,
-    "var_diff": 333.5785321222593,
-    "frac_both_nonzero": 0.935078197945845,
-    "max_lag_corr": 0.3044873565822716
+    "mean_diff": 3.81610809631811e-17,
+    "var_diff": 0.7706082318745595,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6146958469761329
   },
   {
     "nodes": [
@@ -1314,10 +1314,10 @@
       "769372"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -6.9591754757458535,
-    "var_diff": 337.74693912266196,
-    "frac_both_nonzero": 0.9353408029878618,
-    "max_lag_corr": 0.31000556172070864
+    "mean_diff": -4.662288587240821e-16,
+    "var_diff": 0.7679410330058776,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6160294468658448
   },
   {
     "nodes": [
@@ -1325,10 +1325,10 @@
       "717472"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 7.9920928556607835,
-    "var_diff": 529.6602849872501,
-    "frac_both_nonzero": 0.8911939775910365,
-    "max_lag_corr": 0.34660815616283014
+    "mean_diff": 4.529554392586278e-16,
+    "var_diff": 0.9061230818597233,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5469384200625343
   },
   {
     "nodes": [
@@ -1336,10 +1336,10 @@
       "717473"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -6.920499982400368,
-    "var_diff": 465.2546386736673,
-    "frac_both_nonzero": 0.8918650793650794,
-    "max_lag_corr": 0.3803689836182874
+    "mean_diff": -2.459730544691999e-16,
+    "var_diff": 0.8086004721600033,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5956997278177512
   },
   {
     "nodes": [
@@ -1347,10 +1347,10 @@
       "717468"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 9.134277762030736,
-    "var_diff": 425.6886792165731,
-    "frac_both_nonzero": 0.9298260971055089,
-    "max_lag_corr": 0.3679146814979106
+    "mean_diff": 5.433806093670351e-16,
+    "var_diff": 0.8585797095321092,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5707101053652037
   },
   {
     "nodes": [
@@ -1358,10 +1358,10 @@
       "717469"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -4.22412937397181,
-    "var_diff": 365.4506706478673,
-    "frac_both_nonzero": 0.936828898225957,
-    "max_lag_corr": 0.41229756111564236
+    "mean_diff": -3.50086438401357e-16,
+    "var_diff": 0.7603868236980295,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6198065504612833
   },
   {
     "nodes": [
@@ -1369,10 +1369,10 @@
       "763995"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -1.8861461945889468,
-    "var_diff": 296.99485014296386,
-    "frac_both_nonzero": 0.9094012605042017,
-    "max_lag_corr": 0.6914470194376111
+    "mean_diff": -2.2523333655442754e-16,
+    "var_diff": 0.5374285207568213,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7312857134374733
   },
   {
     "nodes": [
@@ -1380,10 +1380,10 @@
       "717465"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -1.7097824314911152,
-    "var_diff": 303.1989916121567,
-    "frac_both_nonzero": 0.9091678338001867,
-    "max_lag_corr": 0.670196969540639
+    "mean_diff": 1.7545801355897396e-16,
+    "var_diff": 0.5512242199132242,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7243878648478023
   },
   {
     "nodes": [
@@ -1391,10 +1391,10 @@
       "717466"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 6.535756536410861,
-    "var_diff": 379.4404744984861,
-    "frac_both_nonzero": 0.9363328664799253,
-    "max_lag_corr": 0.3660066619502414
+    "mean_diff": 3.567231481340842e-17,
+    "var_diff": 0.7904787395840099,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6047605930276593
   },
   {
     "nodes": [
@@ -1402,10 +1402,10 @@
       "717462"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 1.655419899441258,
-    "var_diff": 103.35763621672525,
-    "frac_both_nonzero": 0.9362161531279178,
-    "max_lag_corr": 0.9012331915807767
+    "mean_diff": 1.501555577029517e-16,
+    "var_diff": 0.15521235728736552,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9223938151194325
   },
   {
     "nodes": [
@@ -1413,10 +1413,10 @@
       "717463"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -11.225335284576794,
-    "var_diff": 525.2637727619949,
-    "frac_both_nonzero": 0.936186974789916,
-    "max_lag_corr": 0.31225719162793864
+    "mean_diff": -1.1489803724783873e-16,
+    "var_diff": 0.9285097328748998,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5357450924816752
   },
   {
     "nodes": [
@@ -1424,10 +1424,10 @@
       "717460"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 1.1869117901790345,
-    "var_diff": 99.00200924779347,
-    "frac_both_nonzero": 0.9171626984126984,
-    "max_lag_corr": 0.9325141160023068
+    "mean_diff": -5.773937467472618e-16,
+    "var_diff": 0.2413709201105603,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8793145279188427
   },
   {
     "nodes": [
@@ -1435,10 +1435,10 @@
       "717461"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 14.507929850180812,
-    "var_diff": 445.7274764098372,
-    "frac_both_nonzero": 0.9168709150326797,
-    "max_lag_corr": 0.34846762013355137
+    "mean_diff": 7.267197157336227e-16,
+    "var_diff": 0.8187046497489219,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5906476388029478
   },
   {
     "nodes": [
@@ -1446,10 +1446,10 @@
       "717459"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -14.499472161549805,
-    "var_diff": 450.8725290764177,
-    "frac_both_nonzero": 0.9169292717086834,
-    "max_lag_corr": 0.4214239011219735
+    "mean_diff": -3.7165574503272026e-16,
+    "var_diff": 0.8649109940713379,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5675444623114364
   },
   {
     "nodes": [
@@ -1457,10 +1457,10 @@
       "717458"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 16.754466230936817,
-    "var_diff": 425.58058375432705,
-    "frac_both_nonzero": 0.9365662931839402,
-    "max_lag_corr": 0.4188873067105871
+    "mean_diff": 1.742136304840876e-17,
+    "var_diff": 0.8616584652977783,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5691707263033757
   },
   {
     "nodes": [
@@ -1468,10 +1468,10 @@
       "717456"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -17.54876476053384,
-    "var_diff": 468.63722444021505,
-    "frac_both_nonzero": 0.9336192810457516,
-    "max_lag_corr": 0.38036980124298037
+    "mean_diff": -1.6757692075136047e-16,
+    "var_diff": 0.931088633930952,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.534455640022059
   },
   {
     "nodes": [
@@ -1479,10 +1479,10 @@
       "765164"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -0.035303380611503836,
-    "var_diff": 58.253917521588136,
-    "frac_both_nonzero": 0.9334150326797386,
-    "max_lag_corr": 0.8398955352805657
+    "mean_diff": -8.295887165908934e-19,
+    "var_diff": 0.160451240763411,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9197743708057251
   },
   {
     "nodes": [
@@ -1490,10 +1490,10 @@
       "716339"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 20.65889480792317,
-    "var_diff": 512.568924731027,
-    "frac_both_nonzero": 0.9353991596638656,
-    "max_lag_corr": 0.2512252068080189
+    "mean_diff": 2.2232977604635945e-16,
+    "var_diff": 1.0811454461609584,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.45942722348063375
   },
   {
     "nodes": [
@@ -1501,10 +1501,10 @@
       "716337"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -15.435484575774755,
-    "var_diff": 419.8283097120794,
-    "frac_both_nonzero": 0.9355742296918768,
-    "max_lag_corr": 0.4598274192885342
+    "mean_diff": -5.143450042863539e-17,
+    "var_diff": 0.8669171843283349,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5665413644420219
   },
   {
     "nodes": [
@@ -1512,10 +1512,10 @@
       "717453"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 10.854235756802721,
-    "var_diff": 243.72538958299512,
-    "frac_both_nonzero": 0.9352824463118581,
-    "max_lag_corr": 0.4529755487310291
+    "mean_diff": 2.5468373599340425e-16,
+    "var_diff": 0.6776779205136876,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6611610029059396
   },
   {
     "nodes": [
@@ -1523,10 +1523,10 @@
       "717452"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -12.293476916229455,
-    "var_diff": 245.71686302856483,
-    "frac_both_nonzero": 0.9352532679738562,
-    "max_lag_corr": 0.4643700928723564
+    "mean_diff": 1.908054048159055e-17,
+    "var_diff": 0.6667818489181687,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6666090401797032
   },
   {
     "nodes": [
@@ -1534,10 +1534,10 @@
       "717450"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 9.253758841499563,
-    "var_diff": 223.86851591603508,
-    "frac_both_nonzero": 0.9325980392156863,
-    "max_lag_corr": 0.46175775374109024
+    "mean_diff": 9.291393625818006e-17,
+    "var_diff": 0.6174828618804946,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6912585361140361
   },
   {
     "nodes": [
@@ -1545,10 +1545,10 @@
       "717447"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -4.122957481603753,
-    "var_diff": 194.2527917003044,
-    "frac_both_nonzero": 0.9325980392156863,
-    "max_lag_corr": 0.5276798698355882
+    "mean_diff": -5.624611498486257e-16,
+    "var_diff": 0.5555939181063131,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7222030095633112
   },
   {
     "nodes": [
@@ -1556,10 +1556,10 @@
       "717446"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 3.4444897982341085,
-    "var_diff": 173.84228003970037,
-    "frac_both_nonzero": 0.9280753968253969,
-    "max_lag_corr": 0.5189373525469756
+    "mean_diff": 1.6757692075136047e-16,
+    "var_diff": 0.5241936336630862,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7379031530709318
   },
   {
     "nodes": [
@@ -1567,10 +1567,10 @@
       "716331"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -0.40164179097564956,
-    "var_diff": 29.204231210312248,
-    "frac_both_nonzero": 0.9277252567693745,
-    "max_lag_corr": 0.965064467240112
+    "mean_diff": 3.865883419313563e-16,
+    "var_diff": 0.07546840372116069,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9622657941994519
   },
   {
     "nodes": [
@@ -1578,10 +1578,10 @@
       "717445"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -4.4705631673965875,
-    "var_diff": 236.26654202018713,
-    "frac_both_nonzero": 0.9345529878618114,
-    "max_lag_corr": 0.27196400228737866
+    "mean_diff": 3.73314922465902e-17,
+    "var_diff": 0.7295647581659969,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6352175798320503
   },
   {
     "nodes": [
@@ -1589,10 +1589,10 @@
       "716328"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -4.003964988773286,
-    "var_diff": 131.2919249304557,
-    "frac_both_nonzero": 0.9335901027077498,
-    "max_lag_corr": 0.2830925284178528
+    "mean_diff": -4.2060147931158293e-16,
+    "var_diff": 0.467088472160304,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7664557360587017
   },
   {
     "nodes": [
@@ -1600,10 +1600,10 @@
       "765182"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": -3.1052133353341334,
-    "var_diff": 34.933524789604625,
-    "frac_both_nonzero": 0.9323062558356676,
-    "max_lag_corr": 0.8702923305650394
+    "mean_diff": -8.192188576335072e-17,
+    "var_diff": 0.11674097794874747,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9416295042309779
   },
   {
     "nodes": [
@@ -1611,10 +1611,10 @@
       "764853"
     ],
     "road": "Hollywood Freeway",
-    "mean_diff": 19.94709764692914,
-    "var_diff": 277.1549655327323,
-    "frac_both_nonzero": 0.9330648926237162,
-    "max_lag_corr": 0.3789596239944515
+    "mean_diff": -5.143450042863539e-17,
+    "var_diff": 0.8007305800627136,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5996346665755504
   },
   {
     "nodes": [
@@ -1622,10 +1622,10 @@
       "716942"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": -2.6580208356490744,
-    "var_diff": 219.79264218052293,
-    "frac_both_nonzero": 0.9168417366946778,
-    "max_lag_corr": 0.3859714649792543
+    "mean_diff": 2.6422400623419956e-16,
+    "var_diff": 0.5563662484103942,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.721816847720369
   },
   {
     "nodes": [
@@ -1633,10 +1633,10 @@
       "716941"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 0.3435393254524032,
-    "var_diff": 243.97403686164202,
-    "frac_both_nonzero": 0.9159955648926237,
-    "max_lag_corr": 0.39341013846042483
+    "mean_diff": -1.14690640068691e-16,
+    "var_diff": 0.5780358135134029,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7109820651048663
   },
   {
     "nodes": [
@@ -1644,10 +1644,10 @@
       "773023"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 13.752993732215108,
-    "var_diff": 330.8192839290041,
-    "frac_both_nonzero": 0.9171335200746965,
-    "max_lag_corr": 0.3124295641661529
+    "mean_diff": -9.955064599090721e-17,
+    "var_diff": 0.9229139577439374,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5385429705205019
   },
   {
     "nodes": [
@@ -1655,10 +1655,10 @@
       "773024"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": -20.152137579568862,
-    "var_diff": 224.3733744384139,
-    "frac_both_nonzero": 0.9366830065359477,
-    "max_lag_corr": 0.3814212257778411
+    "mean_diff": 2.762530426247675e-16,
+    "var_diff": 0.7143780570697599,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6428109304996336
   },
   {
     "nodes": [
@@ -1666,10 +1666,10 @@
       "773062"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 1.7195125272331153,
-    "var_diff": 41.9858716396264,
-    "frac_both_nonzero": 0.9364495798319328,
-    "max_lag_corr": 0.8422120466064408
+    "mean_diff": -4.147943582954467e-17,
+    "var_diff": 0.12269158234515214,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9386542021468078
   },
   {
     "nodes": [
@@ -1677,10 +1677,10 @@
       "716939"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 11.757535421576037,
-    "var_diff": 512.3576354356692,
-    "frac_both_nonzero": 0.8112161531279178,
-    "max_lag_corr": 0.4121765362546406
+    "mean_diff": -2.1071553401408693e-16,
+    "var_diff": 1.0209859062256499,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.4895069981918473
   },
   {
     "nodes": [
@@ -1688,10 +1688,10 @@
       "716949"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": -8.64214296829843,
-    "var_diff": 479.6285776336212,
-    "frac_both_nonzero": 0.8001575630252101,
-    "max_lag_corr": 0.5829854674583258
+    "mean_diff": 5.7573456931408e-16,
+    "var_diff": 0.938878996142754,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.530560457780395
   },
   {
     "nodes": [
@@ -1699,10 +1699,10 @@
       "716951"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": -1.6509933718857914,
-    "var_diff": 210.32802441924878,
-    "frac_both_nonzero": 0.9144491129785247,
-    "max_lag_corr": 0.34020747517974625
+    "mean_diff": -7.420671069905541e-16,
+    "var_diff": 0.5161356051339062,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7419321712986808
   },
   {
     "nodes": [
@@ -1710,10 +1710,10 @@
       "718371"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 1.1051674605027195,
-    "var_diff": 65.06857873824423,
-    "frac_both_nonzero": 0.9125816993464052,
-    "max_lag_corr": 0.8808529040074669
+    "mean_diff": 7.282233452824436e-16,
+    "var_diff": 0.14903255911932117,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9254837130663209
   },
   {
     "nodes": [
@@ -1721,10 +1721,10 @@
       "716953"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 0.40416124783246626,
-    "var_diff": 166.57542331059133,
-    "frac_both_nonzero": 0.8880427170868347,
-    "max_lag_corr": 0.940084556283849
+    "mean_diff": -6.085033236194203e-16,
+    "var_diff": 0.46477582587044625,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7676120624801346
   },
   {
     "nodes": [
@@ -1732,10 +1732,10 @@
       "716955"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 18.759587689242366,
-    "var_diff": 250.9512795238998,
-    "frac_both_nonzero": 0.8431664332399627,
-    "max_lag_corr": 0.40378589894142336
+    "mean_diff": 1.6591774331817868e-16,
+    "var_diff": 0.7605699066824432,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6197150047235745
   },
   {
     "nodes": [
@@ -1743,10 +1743,10 @@
       "716956"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": -22.533297971966565,
-    "var_diff": 360.7403234004948,
-    "frac_both_nonzero": 0.8270308123249299,
-    "max_lag_corr": 0.2062437942857816
+    "mean_diff": 2.6546838930908587e-17,
+    "var_diff": 1.1345705951293894,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.4327146388117823
   },
   {
     "nodes": [
@@ -1754,10 +1754,10 @@
       "716958"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 5.14944791574037,
-    "var_diff": 248.5946000325135,
-    "frac_both_nonzero": 0.9122899159663865,
-    "max_lag_corr": 0.30487564403751677
+    "mean_diff": -5.792603213595913e-16,
+    "var_diff": 0.5937349901134227,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7031324748325349
   },
   {
     "nodes": [
@@ -1765,10 +1765,10 @@
       "759591"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": -3.9339171200887764,
-    "var_diff": 314.29730289278115,
-    "frac_both_nonzero": 0.896125116713352,
-    "max_lag_corr": 0.2049547213289905
+    "mean_diff": 1.0950571058999793e-16,
+    "var_diff": 0.7259799158686078,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6370100067689157
   },
   {
     "nodes": [
@@ -1776,10 +1776,10 @@
       "716960"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 2.4871691500674347,
-    "var_diff": 263.60365060449266,
-    "frac_both_nonzero": 0.8945786647992531,
-    "max_lag_corr": 0.2197131155931845
+    "mean_diff": 4.612513264245368e-16,
+    "var_diff": 0.6475089991240048,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6762454682065894
   },
   {
     "nodes": [
@@ -1787,10 +1787,10 @@
       "759602"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": -3.8061776909838008,
-    "var_diff": 190.2735236951897,
-    "frac_both_nonzero": 0.9101598972922502,
-    "max_lag_corr": 0.15003941403878845
+    "mean_diff": -1.4849638026976993e-16,
+    "var_diff": 0.4816748490903127,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7591625507812559
   },
   {
     "nodes": [
@@ -1798,10 +1798,10 @@
       "718089"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 2.5785393787144484,
-    "var_diff": 163.44163356513351,
-    "frac_both_nonzero": 0.9101307189542484,
-    "max_lag_corr": 0.1937166353586281
+    "mean_diff": 4.282751749400487e-16,
+    "var_diff": 0.4156872280078549,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7921563646409459
   },
   {
     "nodes": [
@@ -1809,10 +1809,10 @@
       "761599"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 0.4787983017280986,
-    "var_diff": 207.8492839950078,
-    "frac_both_nonzero": 0.901639822595705,
-    "max_lag_corr": 0.11025760097474326
+    "mean_diff": -1.9246458224908727e-16,
+    "var_diff": 0.5382910300020987,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7308544570531454
   },
   {
     "nodes": [
@@ -1820,10 +1820,10 @@
       "718379"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 1.5312445811657995,
-    "var_diff": 230.67541689673862,
-    "frac_both_nonzero": 0.9056956115779645,
-    "max_lag_corr": 0.1124683682098013
+    "mean_diff": -3.17110286916869e-16,
+    "var_diff": 0.6162784340477848,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6918607506970534
   },
   {
     "nodes": [
@@ -1831,10 +1831,10 @@
       "718090"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 3.6912592235968464,
-    "var_diff": 112.7275707280249,
-    "frac_both_nonzero": 0.9056372549019608,
-    "max_lag_corr": 0.8906223874910878
+    "mean_diff": -2.7210509904181305e-16,
+    "var_diff": 0.28117140860876266,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8594142816278229
   },
   {
     "nodes": [
@@ -1842,10 +1842,10 @@
       "761604"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 0.9137122325782162,
-    "var_diff": 214.81847091482405,
-    "frac_both_nonzero": 0.9149451447245565,
-    "max_lag_corr": 0.23258791834601014
+    "mean_diff": 8.262703617245299e-16,
+    "var_diff": 0.6255186015455272,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6872406646937833
   },
   {
     "nodes": [
@@ -1853,10 +1853,10 @@
       "716968"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": -4.175594392849732,
-    "var_diff": 257.85204424938354,
-    "frac_both_nonzero": 0.8786764705882353,
-    "max_lag_corr": 0.5523059002170349
+    "mean_diff": -1.4600761411999723e-16,
+    "var_diff": 0.7649502575897618,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6175248288130428
   },
   {
     "nodes": [
@@ -1864,10 +1864,10 @@
       "759772"
     ],
     "road": "Santa Ana/Golden State",
-    "mean_diff": 0.5100444807552652,
-    "var_diff": 164.05030442160637,
-    "frac_both_nonzero": 0.8871381886087768,
-    "max_lag_corr": 0.2873843236118826
+    "mean_diff": 4.73072965635957e-16,
+    "var_diff": 0.43792078427292175,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7810395852325893
   },
   {
     "nodes": [
@@ -1875,10 +1875,10 @@
       "767366"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": 3.4665701002623277,
-    "var_diff": 120.26755393302685,
-    "frac_both_nonzero": 0.9321311858076564,
-    "max_lag_corr": 0.0029051767879079617
+    "mean_diff": 1.7379883612579217e-16,
+    "var_diff": 0.41972328757451827,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7901383312818128
   },
   {
     "nodes": [
@@ -1886,10 +1886,10 @@
       "717823"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": -0.9141740029345072,
-    "var_diff": 159.09358044622,
-    "frac_both_nonzero": 0.9319852941176471,
-    "max_lag_corr": 0.015365643126274546
+    "mean_diff": 2.8537851850726734e-16,
+    "var_diff": 0.5327212990891855,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7336393193145346
   },
   {
     "nodes": [
@@ -1897,10 +1897,10 @@
       "737529"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": 1.108992810086998,
-    "var_diff": 242.3232616055791,
-    "frac_both_nonzero": 0.9213935574229691,
-    "max_lag_corr": -0.05579199827331122
+    "mean_diff": -1.847908866206215e-16,
+    "var_diff": 0.7382107683556457,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6308945750777532
   },
   {
     "nodes": [
@@ -1908,10 +1908,10 @@
       "717821"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": -2.0127134534369304,
-    "var_diff": 36.738173899673114,
-    "frac_both_nonzero": 0.9211017740429505,
-    "max_lag_corr": 0.9081768651294299
+    "mean_diff": -1.2464570466778173e-16,
+    "var_diff": 0.10955687657539886,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9452215557289796
   },
   {
     "nodes": [
@@ -1919,10 +1919,10 @@
       "765273"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": 5.9215020846301485,
-    "var_diff": 93.89250163727135,
-    "frac_both_nonzero": 0.9312850140056023,
-    "max_lag_corr": 0.706699274265972
+    "mean_diff": 7.362599859744179e-17,
+    "var_diff": 0.26337374236835065,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8683131148074309
   },
   {
     "nodes": [
@@ -1930,10 +1930,10 @@
       "717819"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": -6.91678920410757,
-    "var_diff": 317.7025442351302,
-    "frac_both_nonzero": 0.9351949112978525,
-    "max_lag_corr": -0.0981111809624822
+    "mean_diff": 6.636709732727147e-17,
+    "var_diff": 0.902925740385563,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5485370815829208
   },
   {
     "nodes": [
@@ -1941,10 +1941,10 @@
       "765265"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": 7.496306103459902,
-    "var_diff": 254.59474713183567,
-    "frac_both_nonzero": 0.9357201213818861,
-    "max_lag_corr": -0.07347481976216481
+    "mean_diff": 2.1009334247664374e-16,
+    "var_diff": 0.789162459108432,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6054187264850476
   },
   {
     "nodes": [
@@ -1952,10 +1952,10 @@
       "767351"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": -7.793463924921821,
-    "var_diff": 229.92271147410287,
-    "frac_both_nonzero": 0.9367121848739496,
-    "max_lag_corr": -0.06884381223507569
+    "mean_diff": 1.625993884518151e-16,
+    "var_diff": 0.7354102610669444,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.6322948278820675
   },
   {
     "nodes": [
@@ -1963,10 +1963,10 @@
       "767350"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": 3.547988373590177,
-    "var_diff": 352.5356679881518,
-    "frac_both_nonzero": 0.9364787581699346,
-    "max_lag_corr": -0.10862994533122947
+    "mean_diff": -3.301763092031756e-16,
+    "var_diff": 0.9021068100051045,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5489465483098044
   },
   {
     "nodes": [
@@ -1974,10 +1974,10 @@
       "717818"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": -2.176495019304018,
-    "var_diff": 378.47897477100565,
-    "frac_both_nonzero": 0.93531162464986,
-    "max_lag_corr": -0.12073935463243962
+    "mean_diff": -2.8123057492431287e-16,
+    "var_diff": 0.9611025963394669,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5194486525065336
   },
   {
     "nodes": [
@@ -1985,10 +1985,10 @@
       "767053"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": 10.109074602063048,
-    "var_diff": 348.98367047356214,
-    "frac_both_nonzero": 0.9352824463118581,
-    "max_lag_corr": -0.12444347963338666
+    "mean_diff": 5.653647103566938e-16,
+    "var_diff": 1.0166525845082135,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.4916736527654715
   },
   {
     "nodes": [
@@ -1996,10 +1996,10 @@
       "765171"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": -3.072725062247121,
-    "var_diff": 84.95794332247884,
-    "frac_both_nonzero": 0.9203723155929038,
-    "max_lag_corr": 0.9614049484687697
+    "mean_diff": -3.9156587423090166e-16,
+    "var_diff": 0.1693364684974756,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9153317575518869
   },
   {
     "nodes": [
@@ -2007,10 +2007,10 @@
       "717816"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": -1.9064816204259485,
-    "var_diff": 172.61202145917096,
-    "frac_both_nonzero": 0.9161706349206349,
-    "max_lag_corr": 0.8552018527069893
+    "mean_diff": -1.260974849218158e-16,
+    "var_diff": 0.3267721902301907,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8366138906408664
   },
   {
     "nodes": [
@@ -2018,10 +2018,10 @@
       "717804"
     ],
     "road": "San Diego Freeway",
-    "mean_diff": 5.457855653835609,
-    "var_diff": 701.8006547354853,
-    "frac_both_nonzero": 0.8865838001867413,
-    "max_lag_corr": -0.20961541586567065
+    "mean_diff": 2.779122200579493e-17,
+    "var_diff": 1.4821157147677813,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.2589420737413033
   },
   {
     "nodes": [
@@ -2029,10 +2029,10 @@
       "772513"
     ],
     "road": "Arroyo Seco Parkway",
-    "mean_diff": -11.235509099473123,
-    "var_diff": 491.8360486389648,
-    "frac_both_nonzero": 0.8766631652661064,
-    "max_lag_corr": 0.3581951786776141
+    "mean_diff": 3.4510890610181164e-16,
+    "var_diff": 1.0110644040772738,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.49446775108856117
   },
   {
     "nodes": [
@@ -2040,10 +2040,10 @@
       "771667"
     ],
     "road": "Arroyo Seco Parkway",
-    "mean_diff": 27.003026198905488,
-    "var_diff": 128.66166329818378,
-    "frac_both_nonzero": 0.9106851073762838,
-    "max_lag_corr": 0.8134571526229476
+    "mean_diff": -6.039405856781704e-16,
+    "var_diff": 0.17287963126288972,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9135601714143278
   },
   {
     "nodes": [
@@ -2051,10 +2051,10 @@
       "760650"
     ],
     "road": "Arroyo Seco Parkway",
-    "mean_diff": -17.24192122450832,
-    "var_diff": 274.917859273603,
-    "frac_both_nonzero": 0.8914857609710551,
-    "max_lag_corr": 0.24881137579182577
+    "mean_diff": 7.23401360867259e-16,
+    "var_diff": 0.958567984522245,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5207159354564368
   },
   {
     "nodes": [
@@ -2062,10 +2062,10 @@
       "771673"
     ],
     "road": "Arroyo Seco Parkway",
-    "mean_diff": 15.546042826852965,
-    "var_diff": 279.19078199326214,
-    "frac_both_nonzero": 0.8909897292250234,
-    "max_lag_corr": 0.21459492213450898
+    "mean_diff": -3.8492916449817454e-16,
+    "var_diff": 0.9789575447076662,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5105211554678365
   },
   {
     "nodes": [
@@ -2073,10 +2073,10 @@
       "772669"
     ],
     "road": "Arroyo Seco Parkway",
-    "mean_diff": -26.935970406681193,
-    "var_diff": 223.14091924466717,
-    "frac_both_nonzero": 0.8935574229691877,
-    "max_lag_corr": 0.7477676488670364
+    "mean_diff": 2.306256632122684e-16,
+    "var_diff": 0.3794378277760282,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.810281059317408
   },
   {
     "nodes": [
@@ -2084,10 +2084,10 @@
       "773013"
     ],
     "road": "Arroyo Seco Parkway",
-    "mean_diff": 2.8403640043980554,
-    "var_diff": 349.27032882528573,
-    "frac_both_nonzero": 0.8771591970121382,
-    "max_lag_corr": 0.2424900904235658
+    "mean_diff": -4.446595520927189e-16,
+    "var_diff": 0.8507638281397708,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.5746180420960454
   },
   {
     "nodes": [
@@ -2095,10 +2095,10 @@
       "773012"
     ],
     "road": "Arroyo Seco Parkway",
-    "mean_diff": 12.933119208331481,
-    "var_diff": 225.29330418494908,
-    "frac_both_nonzero": 0.9147700746965453,
-    "max_lag_corr": 0.1113647687390337
+    "mean_diff": 3.9820258396362883e-16,
+    "var_diff": 0.8440623649436475,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.577968765143342
   },
   {
     "nodes": [
@@ -2106,10 +2106,10 @@
       "767750"
     ],
     "road": "Arroyo Seco Parkway",
-    "mean_diff": -18.044048082195836,
-    "var_diff": 90.63710763953723,
-    "frac_both_nonzero": 0.9314600840336135,
-    "max_lag_corr": 0.7129051836373366
+    "mean_diff": 2.555133247099952e-16,
+    "var_diff": 0.29007693003107055,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.854961517434846
   },
   {
     "nodes": [
@@ -2117,10 +2117,10 @@
       "767751"
     ],
     "road": "Arroyo Seco Parkway",
-    "mean_diff": 0.9148904006046864,
-    "var_diff": 104.71940979338771,
-    "frac_both_nonzero": 0.9330648926237162,
-    "max_lag_corr": 0.03144187761422902
+    "mean_diff": -1.3211200311709978e-16,
+    "var_diff": 0.3374428526190575,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.831278554120862
   },
   {
     "nodes": [
@@ -2128,10 +2128,10 @@
       "769926"
     ],
     "road": "Foothill Freeway",
-    "mean_diff": -3.1998799751382037,
-    "var_diff": 120.4917116128312,
-    "frac_both_nonzero": 0.9167833800186741,
-    "max_lag_corr": 0.5952185252758817
+    "mean_diff": 4.4382996337612797e-16,
+    "var_diff": 0.4182968966242386,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.7908515268008731
   },
   {
     "nodes": [
@@ -2139,10 +2139,10 @@
       "769847"
     ],
     "road": "Foothill Freeway",
-    "mean_diff": 2.1494184595134347,
-    "var_diff": 27.061085983526247,
-    "frac_both_nonzero": 0.920109710550887,
-    "max_lag_corr": 0.5856244917732988
+    "mean_diff": 1.9733841595905876e-16,
+    "var_diff": 0.08921734774151484,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.955391320991292
   },
   {
     "nodes": [
@@ -2150,10 +2150,10 @@
       "769941"
     ],
     "road": "Foothill Freeway",
-    "mean_diff": -2.0280944669534477,
-    "var_diff": 101.54081251742669,
-    "frac_both_nonzero": 0.9169000933706816,
-    "max_lag_corr": 0.631253166282562
+    "mean_diff": -3.625302691502204e-16,
+    "var_diff": 0.362659654292957,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.8186701510602279
   },
   {
     "nodes": [
@@ -2161,10 +2161,10 @@
       "769831"
     ],
     "road": "Foothill Freeway",
-    "mean_diff": 1.788327807975042,
-    "var_diff": 22.7531033941624,
-    "frac_both_nonzero": 0.9337359943977591,
-    "max_lag_corr": 0.6308071630079051
+    "mean_diff": 5.2471486324374e-16,
+    "var_diff": 0.0889811136675169,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.955509437575014
   },
   {
     "nodes": [
@@ -2172,10 +2172,10 @@
       "769953"
     ],
     "road": "Foothill Freeway",
-    "mean_diff": 2.976509168482208,
-    "var_diff": 24.483839385626492,
-    "frac_both_nonzero": 0.9337359943977591,
-    "max_lag_corr": 0.607830177953523
+    "mean_diff": -1.4725199719488358e-16,
+    "var_diff": 0.10204122729245385,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.948979379690277
   },
   {
     "nodes": [
@@ -2183,10 +2183,10 @@
       "769819"
     ],
     "road": "Foothill Freeway",
-    "mean_diff": -4.162377775184148,
-    "var_diff": 25.56755180161076,
-    "frac_both_nonzero": 0.9337359943977591,
-    "max_lag_corr": 0.6092060396332621
+    "mean_diff": -5.867266198089094e-16,
+    "var_diff": 0.10182995374594865,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.949085016546242
   },
   {
     "nodes": [
@@ -2194,9 +2194,9 @@
       "769806"
     ],
     "road": "Foothill Freeway",
-    "mean_diff": -3.404010493086123,
-    "var_diff": 29.191852143394232,
-    "frac_both_nonzero": 0.933094070961718,
-    "max_lag_corr": 0.7317982803763176
+    "mean_diff": 5.754234735453584e-16,
+    "var_diff": 0.11288714627148416,
+    "frac_both_nonzero": 1.0,
+    "max_lag_corr": 0.9435564198436238
   }
 ]

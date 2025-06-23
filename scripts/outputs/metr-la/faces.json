@@ -10,9 +10,9 @@
       "San Diego Freeway",
       "Ventura Freeway"
     ],
-    "mean_joint": 51.61716928090681,
-    "var_joint": 394.61646726712854,
-    "frac_all_nonzero": 0.9192051820728291
+    "mean_joint": -1.4600761411999723e-16,
+    "var_joint": 0.9999707096684832,
+    "frac_all_nonzero": 1.0
   },
   {
     "nodes": [
@@ -25,9 +25,9 @@
       "Ventura Freeway",
       "Hollywood Freeway"
     ],
-    "mean_joint": 55.612401795208825,
-    "var_joint": 422.8114634571059,
-    "frac_all_nonzero": 0.922764939309057
+    "mean_joint": 1.2277913005545222e-16,
+    "var_joint": 0.9999707116273149,
+    "frac_all_nonzero": 1.0
   },
   {
     "nodes": [
@@ -40,9 +40,9 @@
       "Santa Ana/Golden State",
       "Ventura Freeway"
     ],
-    "mean_joint": 53.167265106273994,
-    "var_joint": 409.7789490533811,
-    "frac_all_nonzero": 0.8549836601307189
+    "mean_joint": -4.894573427886271e-17,
+    "var_joint": 0.9999707092044845,
+    "frac_all_nonzero": 1.0
   },
   {
     "nodes": [
@@ -55,9 +55,9 @@
       "Glendale Freeway",
       "Ventura Freeway"
     ],
-    "mean_joint": 58.57377830472467,
-    "var_joint": 440.5637608999897,
-    "frac_all_nonzero": 0.7935340802987861
+    "mean_joint": 1.3024542850477027e-16,
+    "var_joint": 0.99997071499814,
+    "frac_all_nonzero": 1.0
   },
   {
     "nodes": [
@@ -70,9 +70,9 @@
       "Glendale Freeway",
       "Santa Ana/Golden State"
     ],
-    "mean_joint": 58.69921543849022,
-    "var_joint": 315.1364091240806,
-    "frac_all_nonzero": 0.8861753034547152
+    "mean_joint": -2.6712756674226765e-16,
+    "var_joint": 0.9999706964315485,
+    "frac_all_nonzero": 1.0
   },
   {
     "nodes": [
@@ -85,9 +85,9 @@
       "Arroyo Seco Parkway",
       "Hollywood Freeway"
     ],
-    "mean_joint": 43.38598634187471,
-    "var_joint": 456.05332591674363,
-    "frac_all_nonzero": 0.8750583566760037
+    "mean_joint": 1.1946077518908866e-16,
+    "var_joint": 0.9999707087237966,
+    "frac_all_nonzero": 1.0
   },
   {
     "nodes": [
@@ -100,9 +100,9 @@
       "Santa Ana/Golden State",
       "Arroyo Seco Parkway"
     ],
-    "mean_joint": 37.71023141316712,
-    "var_joint": 280.8097778686015,
-    "frac_all_nonzero": 0.8913398692810458
+    "mean_joint": 6.636709732727147e-17,
+    "var_joint": 0.9999706535245708,
+    "frac_all_nonzero": 1.0
   },
   {
     "nodes": [
@@ -115,9 +115,9 @@
       "Glendale Freeway",
       "Arroyo Seco Parkway"
     ],
-    "mean_joint": 47.529840631275654,
-    "var_joint": 470.55773556897964,
-    "frac_all_nonzero": 0.8101657329598506
+    "mean_joint": -4.645696812909003e-17,
+    "var_joint": 0.9999707169448393,
+    "frac_all_nonzero": 1.0
   },
   {
     "nodes": [
@@ -130,8 +130,8 @@
       "Foothill Freeway",
       "Glendale Freeway"
     ],
-    "mean_joint": 56.27040503990948,
-    "var_joint": 343.5224042480105,
-    "frac_all_nonzero": 0.8663923902894491
+    "mean_joint": 3.0694782513863054e-17,
+    "var_joint": 0.9999707015500418,
+    "frac_all_nonzero": 1.0
   }
 ]
