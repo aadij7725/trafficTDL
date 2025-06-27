@@ -38,7 +38,11 @@ def compute_metrics(y_true, y_pred):
     y_pred = y_pred.reshape(-1)
     rmse = np.sqrt(np.mean((y_true - y_pred) ** 2))
     mae = np.mean(np.abs(y_true - y_pred))
-    mape = np.mean(np.abs((y_true - y_pred) / (y_true + 1e-8))) * 100
+    mask = y_true > 1e-3  # Only use positive ground-truth speeds for MAPE
+    if np.any(mask):
+        mape = np.mean(np.abs((y_true[mask] - y_pred[mask]) / y_true[mask])) * 100
+    else:
+        mape = np.nan
     return rmse, mae, mape
 
 def evaluate_model(model, dataloader, device, node_features, edge_features, face_features, edge_map, face_map, means, stds):
@@ -64,6 +68,11 @@ def evaluate_model(model, dataloader, device, node_features, edge_features, face
             all_targets.append(y)
     y_pred = np.concatenate(all_preds, axis=0)
     y_true = np.concatenate(all_targets, axis=0)
+    print("y_true min/max/mean:", np.min(y_true), np.max(y_true), np.mean(y_true))
+    print("y_pred min/max/mean:", np.min(y_pred), np.max(y_pred), np.mean(y_pred))
+    print("num zeros in y_true:", np.sum(np.abs(y_true) < 1e-3), "/", y_true.size)
+    print("num negatives in y_true:", np.sum(y_true < 0))
+    print("num NaNs in y_true:", np.sum(np.isnan(y_true)))
     return compute_metrics(y_true, y_pred)
 
 class TrafficCCNN(nn.Module):
@@ -206,7 +215,7 @@ def main():
     train_loader = DataLoader(train_dataset, batch_size=1, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=1, shuffle=False)
 
-    # ... [load features and maps as before] ...
+    # ... [load features and maps] ...
     with open(sensors_json, "r") as f:
         node_list = json.load(f)
     with open(edges_json, "r") as f:

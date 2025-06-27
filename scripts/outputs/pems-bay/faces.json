@@ -1,0 +1,167 @@
+[
+  {
+    "nodes": [
+      "401489",
+      "401464",
+      "413845",
+      "413026"
+    ],
+    "roads": [
+      "South Bay",
+      "I880/CA17"
+    ],
+    "mean_joint": -1.4277948801259498e-16,
+    "var_joint": 0.9999804627728889,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "404554",
+      "401351",
+      "400545",
+      "404522"
+    ],
+    "roads": [
+      "South Bay",
+      "Bayshore"
+    ],
+    "mean_joint": -1.704626170159921e-16,
+    "var_joint": 0.9999804836738369,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "400760",
+      "401816",
+      "401817",
+      "400911"
+    ],
+    "roads": [
+      "Bayshore",
+      "Guadalupe"
+    ],
+    "mean_joint": 8.291301691657855e-17,
+    "var_joint": 0.9999805124408626,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "404759",
+      "400045",
+      "400394",
+      "400922"
+    ],
+    "roads": [
+      "Bayshore",
+      "I880/CA17"
+    ],
+    "mean_joint": 5.509351781956865e-16,
+    "var_joint": 0.9999806258954794,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "400665",
+      "400400",
+      "401403",
+      "402361"
+    ],
+    "roads": [
+      "Bayshore",
+      "Sinclair/I280"
+    ],
+    "mean_joint": 2.4655712925193097e-16,
+    "var_joint": 0.9999805266816492,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "401440",
+      "403225",
+      "409528",
+      "409524"
+    ],
+    "roads": [
+      "Guadalupe",
+      "I880/CA17"
+    ],
+    "mean_joint": 3.1201477418607195e-16,
+    "var_joint": 0.9999805396707515,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "400236",
+      "403409",
+      "400916",
+      "414284"
+    ],
+    "roads": [
+      "Guadalupe",
+      "Sinclair/I280"
+    ],
+    "mean_joint": -1.8000852356888765e-17,
+    "var_joint": 0.9999805374723887,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "401555",
+      "401495",
+      "400268",
+      "400842"
+    ],
+    "roads": [
+      "Guadalupe",
+      "West Valley/CA85"
+    ],
+    "mean_joint": -6.082106175130598e-17,
+    "var_joint": 0.9999801241910752,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "407710",
+      "407711",
+      "401611",
+      "408907"
+    ],
+    "roads": [
+      "Sinclair/I280",
+      "I880/CA17"
+    ],
+    "mean_joint": 9.164070290779735e-17,
+    "var_joint": 0.9999805291584842,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "401846",
+      "407344",
+      "404640",
+      "407370"
+    ],
+    "roads": [
+      "Sinclair/I280",
+      "West Valley/CA85"
+    ],
+    "mean_joint": 4.854775332615455e-16,
+    "var_joint": 0.999980544344327,
+    "frac_all_nonzero": 1.0
+  },
+  {
+    "nodes": [
+      "400073",
+      "400715",
+      "400822",
+      "400792"
+    ],
+    "roads": [
+      "West Valley/CA85",
+      "I880/CA17"
+    ],
+    "mean_joint": 2.528301535581195e-16,
+    "var_joint": 0.9999805481232662,
+    "frac_all_nonzero": 1.0
+  }
+]

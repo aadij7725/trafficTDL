@@ -19,11 +19,11 @@ def explore_node_locations(pkl_path):
         print("\nSample entries:")
         for i, (key, value) in enumerate(data.items()):
             print(f"{key}: {value}")
-            if i >= 9:  # limit output
+            if i >= 320:  # limit output
                 break
     else:
         print("Object is not a dictionary. Showing raw contents:")
         print(data)
 
 if __name__ == "__main__":
-    explore_node_locations("../data/METR-LA/node_locations.pkl")
+    explore_node_locations("../data/PEMS-BAY/node_locations.pkl")
