@@ -10,7 +10,7 @@ import time
 
 # --- DATASET ---
 class TrafficPredictionDataset(Dataset):
-    def __init__(self, readings, input_window, pred_window=12, start=0, end=None):
+    def __init__(self, readings, input_window, pred_window=6, start=0, end=None):
         self.readings = readings
         self.input_window = input_window
         self.pred_window = pred_window
@@ -76,7 +76,7 @@ def evaluate_model(model, dataloader, device, node_features, edge_features, face
     return compute_metrics(y_true, y_pred)
 
 class TrafficCCNN(nn.Module):
-    def __init__(self, complex, num_sensors, input_window, pred_window=12, hidden_dim=64, 
+    def __init__(self, complex, num_sensors, input_window, pred_window=6, hidden_dim=64, 
                  node_feat_dim=7, edge_feat_dim=4, face_feat_dim=3):
         super().__init__()
         self.num_sensors = num_sensors
@@ -198,11 +198,11 @@ def main():
     traffic_complex = TrafficComplex(sensors_json, edges_json, faces_json)
     readings = np.load(readings_npy)
     num_sensors, num_timesteps = readings.shape
-    input_window = 24
-    pred_window = 12
+    input_window = 12
+    pred_window = 6
 
     # Validation: only last 12 steps
-    val_steps = 12
+    val_steps = 6
     train_dataset = TrafficPredictionDataset(readings, input_window, pred_window, start=0, end=num_timesteps - val_steps + 1)
     val_start = num_timesteps - input_window - pred_window
     val_end = val_start + 1 + input_window + pred_window - 1
