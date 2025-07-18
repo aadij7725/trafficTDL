@@ -1,0 +1,8 @@
+numpy
+pandas
+h5py
+torch==2.7.1
+scikit-learn==1.6.1
+matplotlib==3.10.3
+toponetx
+topomodelx

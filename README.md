@@ -6,7 +6,7 @@ This repository contains code for traffic forecasting using **Combinatorial Comp
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.13+
 - All dependencies are listed in `requirements.txt`
 
 Install requirements with:
