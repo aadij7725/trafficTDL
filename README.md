@@ -1,6 +1,6 @@
 # Combinatorial Complex Neural Network (CCNN) for Traffic Forecasting
 
-![Combinatorial Complex Neural Network Model Architecture](./model_architecture%20(1).pdf "Model Architecture")
+![Combinatorial Complex Neural Network Model Architecture](./model_architecture.png "Model Architecture")
 
 This repository contains code for traffic forecasting using **Combinatorial Complex Neural Networks (CCNN)**, a topological deep learning approach that leverages combinatorial structures for spatiotemporal prediction. 
 
@@ -40,7 +40,7 @@ python prepare_data.py
 
 ## Model Architecture
 
-> ![Combinatorial Complex Neural Network Model Architecture](./model_architecture%20(1).pdf "Model Architecture")
+> ![Combinatorial Complex Neural Network Model Architecture](./model_architecture.png "Model Architecture")
 
 
 ## Pre-trained Models
