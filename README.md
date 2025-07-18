@@ -40,8 +40,6 @@ python prepare_data.py
 
 ## Model Architecture
 
-A diagram of the CCNN model architecture should be placed here:
-
 > ![Combinatorial Complex Neural Network Model Architecture](./model_architecture%20(1).pdf "Model Architecture")
 
 
