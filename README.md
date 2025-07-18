@@ -1,8 +1,8 @@
-# Combinatorial Complex Neural Network (CCNN) for Traffic Forecasting
+# TNNs: Topological Neural Networks for Traffic flow prediction
 
-![Combinatorial Complex Neural Network Model Architecture](./model_architecture.pdf "Model Architecture")
+![Topological Neural Network Model Architecture](./model_architecture.pdf "Model Architecture")
 
-This repository contains code for traffic forecasting using **Combinatorial Complex Neural Networks (CCNN)**, a topological deep learning approach that leverages combinatorial structures for spatiotemporal prediction. 
+This repository contains code for traffic forecasting using **Topological Neural Networks (TNN)**, a topological deep learning approach that leverages combinatorial structures for spatiotemporal prediction from the following paper: Aadi Jain, Ibrahem AlJabea, PLACEHOLDER FOR PAPER, PLACEHOLDER FOR JOURNAL
 
 ## Requirements
 
@@ -40,17 +40,17 @@ python prepare_data.py
 
 ## Model Architecture
 
-> ![Combinatorial Complex Neural Network Model Architecture](./model_architecture.pdf "Model Architecture")
+> ![Topological Neural Network Model Architecture](./model_architecture.pdf "Model Architecture")
 
 
 ## Pre-trained Models
 
-Pre-trained CCNN models are available in this repository. All pre-trained models use the `.pt` file format.  
+Pre-trained TNN models are available in this repository. All pre-trained models use the `.pt` file format.  
 You can utilize these models directly for inference or further fine-tuning.
 
 ## Training
 
-After preparing the data as described above, train the CCNN model with:
+After preparing the data as described above, train the TNN model with:
 
 ```bash
 python train_traffic_ccnn.py
@@ -68,11 +68,11 @@ The following metrics are computed automatically by the training script:
 
 ## Applications
 
-CCNN is a novel approach for spatiotemporal traffic forecasting and can be experimented with on any relevant traffic dataset. As this is a new model, its potential applications are broad and open for exploration.
+TNN is a novel approach for spatiotemporal traffic forecasting and can be experimented with on any relevant traffic dataset. As this is a new model, its potential applications are broad and open for exploration.
 
 ## Citation
 
-If you use CCNN or this codebase in your research, please cite this work (pending publication):
+If you use TNN or this codebase in your research, please cite this work (pending publication):
 
 ```
 @article{jain2025tnn_traffic,
